@@ -373,37 +373,77 @@
       .steps {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
+        gap: 16px;
         margin-top: 48px;
       }
 
-      .step { text-align: center; }
+      .step {
+        background: var(--surface-high);
+        border: 1px solid rgba(74, 72, 64, 0.5);
+        border-radius: var(--radius-md);
+        padding: 28px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: relative;
+        overflow: hidden;
+      }
 
-      .step-number {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background: var(--primary);
-        color: var(--on-primary);
-        font-size: 20px;
-        font-weight: 800;
+      .step::before {
+        content: attr(data-num);
+        position: absolute;
+        top: -12px;
+        right: 16px;
+        font-size: 96px;
+        font-weight: 900;
+        color: rgba(255, 140, 81, 0.06);
+        line-height: 1;
+        pointer-events: none;
+        user-select: none;
+      }
+
+      .step-icon-wrap {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        background: rgba(255, 140, 81, 0.12);
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto 20px;
+        flex-shrink: 0;
       }
 
-      .step-emoji {
-        font-size: 48px;
-        display: block;
-        margin-bottom: 16px;
+      .step-icon-wrap svg {
+        width: 26px;
+        height: 26px;
+        color: var(--primary);
+        stroke: var(--primary);
+      }
+
+      .step-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: var(--primary);
+        color: var(--on-primary);
+        font-size: 12px;
+        font-weight: 800;
+        flex-shrink: 0;
+      }
+
+      .step-header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
       }
 
       .step-title {
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 700;
         color: var(--text);
-        margin-bottom: 8px;
       }
 
       .step-desc {
@@ -589,7 +629,7 @@
         .hero-phone-wrap { width: 220px; }
         .section { padding: 60px 20px; }
         .how-it-works { padding: 40px 24px; }
-        .steps { grid-template-columns: 1fr; gap: 32px; }
+        .steps { grid-template-columns: 1fr; gap: 12px; }
         .multi-section { grid-template-columns: 1fr; padding: 60px 20px; gap: 40px; }
         .multi-visual { display: none; }
         .ingredients-section { padding: 60px 20px; }
@@ -732,22 +772,44 @@
           Three taps to a perfect cook
         </h2>
         <div class="steps">
-          <div class="step">
-            <span class="step-emoji">🔍</span>
-            <div class="step-number">1</div>
-            <div class="step-title">Pick an ingredient</div>
+          <div class="step" data-num="1">
+            <div class="step-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+              </svg>
+            </div>
+            <div class="step-header">
+              <div class="step-badge">1</div>
+              <div class="step-title">Pick an ingredient</div>
+            </div>
             <p class="step-desc">Browse or search 36 ingredients across eggs, meat, fish, greens, grains, and pantry staples.</p>
           </div>
-          <div class="step">
-            <span class="step-emoji">⚙️</span>
-            <div class="step-number">2</div>
-            <div class="step-title">Choose method & doneness</div>
-            <p class="step-desc">Select how you're cooking it and how you like it. The app shows you the recommended heat and time.</p>
+          <div class="step" data-num="2">
+            <div class="step-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/>
+                <circle cx="8" cy="6" r="2" fill="var(--primary)" stroke="none"/>
+                <circle cx="16" cy="12" r="2" fill="var(--primary)" stroke="none"/>
+                <circle cx="10" cy="18" r="2" fill="var(--primary)" stroke="none"/>
+              </svg>
+            </div>
+            <div class="step-header">
+              <div class="step-badge">2</div>
+              <div class="step-title">Choose method &amp; doneness</div>
+            </div>
+            <p class="step-desc">Select how you're cooking it and how you like it. The app shows the recommended heat and time.</p>
           </div>
-          <div class="step">
-            <span class="step-emoji">✅</span>
-            <div class="step-number">3</div>
-            <div class="step-title">Cook perfectly</div>
+          <div class="step" data-num="3">
+            <div class="step-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/>
+                <polyline points="12 7 12 12 15.5 12"/>
+              </svg>
+            </div>
+            <div class="step-header">
+              <div class="step-badge">3</div>
+              <div class="step-title">Cook perfectly</div>
+            </div>
             <p class="step-desc">The timer runs, alerts you when done, and you serve a perfectly cooked dish every single time.</p>
           </div>
         </div>
