@@ -1,0 +1,4266 @@
+{
+  "version": 1,
+  "ingredients": [
+    {
+      "id": "eggs",
+      "name": "Eggs",
+      "emoji": "🥚",
+      "description": "Free range eggs with deep golden yolks - from locally sourced farms",
+      "category": "Eggs",
+      "tips": [
+        {
+          "emoji": "🧊",
+          "title": "Ice Bath",
+          "description": "Plunge in ice water immediately to stop cooking"
+        },
+        {
+          "emoji": "🌡️",
+          "title": "Room Temp",
+          "description": "Take eggs out 10 min before for even cooking"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Jammy & Juicy",
+              "minutes": 6,
+              "description": "Runny yolk, set white"
+            },
+            {
+              "label": "Firm White, Soft Yolk",
+              "minutes": 8,
+              "description": "Fully set white, jammy yolk"
+            },
+            {
+              "label": "Fully Set",
+              "minutes": 10,
+              "description": "Hard boiled, fully set"
+            }
+          ]
+        },
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-LOW HEAT",
+          "doneness": [
+            {
+              "label": "Sunny Side Up",
+              "minutes": 3,
+              "description": "Runny yolk, set white edges"
+            },
+            {
+              "label": "Over Easy",
+              "minutes": 4,
+              "description": "Slightly runny yolk"
+            },
+            {
+              "label": "Over Hard",
+              "minutes": 5,
+              "description": "Fully set yolk"
+            }
+          ]
+        },
+        {
+          "id": "steaming",
+          "label": "Steaming",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Soft",
+              "minutes": 7,
+              "description": "Silky, slightly runny center"
+            },
+            {
+              "label": "Medium",
+              "minutes": 9,
+              "description": "Jammy, fully set white"
+            },
+            {
+              "label": "Hard",
+              "minutes": 12,
+              "description": "Fully cooked through"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steak",
+      "name": "Steak",
+      "emoji": "🥩",
+      "description": "Hand selected cuts from local farms, aged to perfection",
+      "category": "Meat",
+      "tips": [
+        {
+          "emoji": "🧂",
+          "title": "Pat Dry",
+          "description": "Dry the surface for a better sear"
+        },
+        {
+          "emoji": "⏸️",
+          "title": "Rest It",
+          "description": "Let rest 5 min after cooking to retain juices"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Rare",
+              "minutes": 3,
+              "description": "Red center, warm",
+              "tempF": 120
+            },
+            {
+              "label": "Medium Rare",
+              "minutes": 4,
+              "description": "Pink center",
+              "tempF": 130
+            },
+            {
+              "label": "Medium",
+              "minutes": 5,
+              "description": "Slightly pink",
+              "tempF": 140
+            },
+            {
+              "label": "Well Done",
+              "minutes": 7,
+              "description": "Fully cooked",
+              "tempF": 160
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Rare",
+              "minutes": 4,
+              "description": "Red center, warm",
+              "tempF": 120
+            },
+            {
+              "label": "Medium Rare",
+              "minutes": 5,
+              "description": "Pink center",
+              "tempF": 130
+            },
+            {
+              "label": "Medium",
+              "minutes": 7,
+              "description": "Slightly pink",
+              "tempF": 140
+            },
+            {
+              "label": "Well Done",
+              "minutes": 10,
+              "description": "Fully cooked",
+              "tempF": 160
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Medium Rare",
+              "minutes": 10,
+              "description": "After sear",
+              "tempF": 130
+            },
+            {
+              "label": "Medium",
+              "minutes": 14,
+              "description": "After sear",
+              "tempF": 140
+            },
+            {
+              "label": "Well Done",
+              "minutes": 18,
+              "description": "After sear",
+              "tempF": 160
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salmon",
+      "name": "Salmon Fillet",
+      "emoji": "🐟",
+      "description": "Wild caught Atlantic salmon, fresh daily",
+      "category": "Fish",
+      "tips": [
+        {
+          "emoji": "🐠",
+          "title": "Skin Down",
+          "description": "Start skin-side down for crispy skin"
+        },
+        {
+          "emoji": "🍋",
+          "title": "Lemon Finish",
+          "description": "Squeeze lemon right after removing from heat"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Flaky & Moist",
+              "minutes": 8,
+              "description": "Just cooked, translucent center"
+            },
+            {
+              "label": "Firm",
+              "minutes": 12,
+              "description": "Fully opaque, flakes easily"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 375,
+          "doneness": [
+            {
+              "label": "Flaky & Moist",
+              "minutes": 12,
+              "description": "Just cooked through"
+            },
+            {
+              "label": "Firm",
+              "minutes": 16,
+              "description": "Fully set texture"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 380,
+          "doneness": [
+            {
+              "label": "Flaky & Moist",
+              "minutes": 8,
+              "description": "Crispy outside, moist center"
+            },
+            {
+              "label": "Firm",
+              "minutes": 11,
+              "description": "Fully cooked, crispy skin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta",
+      "emoji": "🍝",
+      "description": "Traditional bronze-cut pasta shapes, Italian style",
+      "category": "Grains",
+      "tips": [
+        {
+          "emoji": "🧂",
+          "title": "Salt the Water",
+          "description": "Water should taste like the sea"
+        },
+        {
+          "emoji": "💧",
+          "title": "Save Pasta Water",
+          "description": "Reserve a cup before draining for sauce"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "ROLLING BOIL",
+          "doneness": [
+            {
+              "label": "Al Dente",
+              "minutes": 8,
+              "description": "Slight bite in the center"
+            },
+            {
+              "label": "Tender",
+              "minutes": 10,
+              "description": "Fully softened, classic texture"
+            },
+            {
+              "label": "Soft",
+              "minutes": 12,
+              "description": "Very soft, well cooked"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chicken",
+      "name": "Chicken Breast",
+      "emoji": "🍗",
+      "description": "Free range chicken breast, tender and juicy",
+      "category": "Meat",
+      "tips": [
+        {
+          "emoji": "🌡️",
+          "title": "Use a Thermometer",
+          "description": "Target temp for safe, juicy chicken",
+          "tempF": 165
+        },
+        {
+          "emoji": "⏸️",
+          "title": "Rest 5 Minutes",
+          "description": "Resting redistributes juices throughout"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 22,
+              "description": "Moist and tender",
+              "tempF": 165
+            },
+            {
+              "label": "Well Done",
+              "minutes": 28,
+              "description": "Fully cooked through",
+              "tempF": 175
+            }
+          ]
+        },
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 14,
+              "description": "Golden crust",
+              "tempF": 165
+            },
+            {
+              "label": "Well Done",
+              "minutes": 18,
+              "description": "Fully cooked, crispy edges",
+              "tempF": 175
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 375,
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 18,
+              "description": "Crispy outside, juicy center",
+              "tempF": 165
+            },
+            {
+              "label": "Well Done",
+              "minutes": 22,
+              "description": "Fully cooked, extra crispy",
+              "tempF": 175
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "asparagus",
+      "name": "Asparagus",
+      "emoji": "🥦",
+      "description": "Vibrant, crisp vegetables harvested at their peak nutritional value",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "✂️",
+          "title": "Trim the Ends",
+          "description": "Snap off the woody bottom inch"
+        },
+        {
+          "emoji": "🧊",
+          "title": "Ice Bath",
+          "description": "Blanch in ice water to lock in bright color"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 4,
+              "description": "Bright green, slight snap"
+            },
+            {
+              "label": "Tender",
+              "minutes": 6,
+              "description": "Fully softened, caramelized"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 425,
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 10,
+              "description": "Slightly charred, bright green"
+            },
+            {
+              "label": "Tender",
+              "minutes": 14,
+              "description": "Fully roasted, caramelized tips"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 3,
+              "description": "Vibrant green, light snap"
+            },
+            {
+              "label": "Tender",
+              "minutes": 5,
+              "description": "Fully softened, silky texture"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 7,
+              "description": "Crispy tips, tender stalks"
+            },
+            {
+              "label": "Tender",
+              "minutes": 10,
+              "description": "Fully softened with crispy edges"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shrimp",
+      "name": "Shrimp",
+      "emoji": "🦐",
+      "description": "Fresh wild-caught shrimp, sweet and tender",
+      "category": "Fish",
+      "tips": [
+        {
+          "emoji": "🧊",
+          "title": "Thaw Properly",
+          "description": "Thaw in cold water for 15 min, never microwave"
+        },
+        {
+          "emoji": "🧂",
+          "title": "Pat Dry",
+          "description": "Dry well before cooking for better sear"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Juicy \"C\" Shape",
+              "minutes": 2,
+              "description": "Pink, curled into C — perfectly done"
+            },
+            {
+              "label": "Firm \"O\" Shape",
+              "minutes": 4,
+              "description": "Fully cooked, tightly curled — overcooked risk"
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Juicy \"C\" Shape",
+              "minutes": 3,
+              "description": "Pink with light char marks"
+            },
+            {
+              "label": "Charred",
+              "minutes": 5,
+              "description": "Deep char, smoky flavor"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 5,
+              "description": "Crispy outside, tender inside"
+            },
+            {
+              "label": "Extra Crispy",
+              "minutes": 7,
+              "description": "Fully crisp throughout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grilled-cheese",
+      "name": "Grilled Cheese",
+      "emoji": "🧀",
+      "description": "Classic golden sandwich with melted cheese center",
+      "category": "Pantry",
+      "tips": [
+        {
+          "emoji": "🧈",
+          "title": "Butter the Bread",
+          "description": "Butter all the way to the edges for even browning"
+        },
+        {
+          "emoji": "🔥",
+          "title": "Low & Slow",
+          "description": "Medium-low heat lets cheese melt before bread burns"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-LOW HEAT",
+          "doneness": [
+            {
+              "label": "Golden",
+              "minutes": 4,
+              "description": "Light golden crust, fully melted cheese"
+            },
+            {
+              "label": "Dark & Crispy",
+              "minutes": 6,
+              "description": "Deep golden, extra crispy, gooey center"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "broccoli",
+      "name": "Broccoli",
+      "emoji": "🥦",
+      "description": "Fresh broccoli florets, vibrant and nutritious",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "✂️",
+          "title": "Uniform Florets",
+          "description": "Cut same-size pieces for even cooking"
+        },
+        {
+          "emoji": "💧",
+          "title": "Don't Overcook",
+          "description": "Keep it bright green — yellow means overdone"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Vibrant & Crisp",
+              "minutes": 4,
+              "description": "Bright green, slight char"
+            },
+            {
+              "label": "Tender",
+              "minutes": 7,
+              "description": "Fully softened, caramelized edges"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 425,
+          "doneness": [
+            {
+              "label": "Crispy Tips",
+              "minutes": 15,
+              "description": "Crispy floret ends, tender stems"
+            },
+            {
+              "label": "Charred",
+              "minutes": 20,
+              "description": "Deep roast, nutty caramelized flavor"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 4,
+              "description": "Vibrant green, slight snap"
+            },
+            {
+              "label": "Fully Tender",
+              "minutes": 7,
+              "description": "Soft throughout, no crunch"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 375,
+          "doneness": [
+            {
+              "label": "Crispy",
+              "minutes": 8,
+              "description": "Crispy florets, tender inside"
+            },
+            {
+              "label": "Extra Crispy",
+              "minutes": 12,
+              "description": "Very crispy, charred tips"
+            }
+          ]
+        },
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 3,
+              "description": "Bright green, firm bite — drain immediately"
+            },
+            {
+              "label": "Fully Tender",
+              "minutes": 6,
+              "description": "Soft throughout, good for soups"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smashed-potatoes",
+      "name": "Smashed Potatoes",
+      "emoji": "🥔",
+      "description": "Baby potatoes smashed and roasted to crispy perfection",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "💧",
+          "title": "Boil First",
+          "description": "Boil until fork-tender before smashing"
+        },
+        {
+          "emoji": "🫒",
+          "title": "Generous Oil",
+          "description": "Coat well in olive oil for maximum crispiness"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 450,
+          "doneness": [
+            {
+              "label": "Crispy Edges",
+              "minutes": 25,
+              "description": "Golden edges, fluffy soft center"
+            },
+            {
+              "label": "Extra Crispy",
+              "minutes": 35,
+              "description": "Very crispy all over, deep golden color"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Crispy Edges",
+              "minutes": 15,
+              "description": "Golden and crispy in less time"
+            },
+            {
+              "label": "Extra Crispy",
+              "minutes": 20,
+              "description": "Deep crisp throughout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tofu",
+      "name": "Tofu",
+      "emoji": "🟨",
+      "description": "Firm tofu pressed and cooked to golden perfection",
+      "category": "Pantry",
+      "tips": [
+        {
+          "emoji": "🗜️",
+          "title": "Press It",
+          "description": "Press for 30 min to remove moisture for better texture"
+        },
+        {
+          "emoji": "🌽",
+          "title": "Cornstarch",
+          "description": "Coat lightly in cornstarch for extra crispy exterior"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Golden Crust",
+              "minutes": 8,
+              "description": "Golden on all sides, soft center"
+            },
+            {
+              "label": "Crispy",
+              "minutes": 12,
+              "description": "Deeply crispy exterior, chewy inside"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Golden",
+              "minutes": 25,
+              "description": "Evenly golden, slightly chewy"
+            },
+            {
+              "label": "Crispy",
+              "minutes": 35,
+              "description": "Very crispy, almost jerky-like texture"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 375,
+          "doneness": [
+            {
+              "label": "Golden",
+              "minutes": 12,
+              "description": "Crispy outside, tender inside"
+            },
+            {
+              "label": "Extra Crispy",
+              "minutes": 18,
+              "description": "Maximum crunch throughout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "corn",
+      "name": "Corn on the Cob",
+      "emoji": "🌽",
+      "description": "Sweet summer corn, juicy and charred to perfection",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "🧈",
+          "title": "Butter While Hot",
+          "description": "Apply butter immediately off heat so it melts in"
+        },
+        {
+          "emoji": "🌊",
+          "title": "Soak for Grill",
+          "description": "Soak in water 30 min before grilling in husk"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "ROLLING BOIL",
+          "doneness": [
+            {
+              "label": "Sweet & Tender",
+              "minutes": 5,
+              "description": "Just cooked, sweet and juicy"
+            },
+            {
+              "label": "Very Tender",
+              "minutes": 8,
+              "description": "Softer kernels, fully cooked through"
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Lightly Charred",
+              "minutes": 10,
+              "description": "Sweet with light grill marks"
+            },
+            {
+              "label": "Deeply Charred",
+              "minutes": 15,
+              "description": "Smoky, caramelized kernels"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Roasted",
+              "minutes": 20,
+              "description": "Tender with lightly caramelized edges"
+            },
+            {
+              "label": "Charred",
+              "minutes": 30,
+              "description": "Deeply roasted, intense sweetness"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pork-chop",
+      "name": "Pork Chop",
+      "emoji": "🐷",
+      "description": "Juicy bone-in pork chop with a golden sear",
+      "category": "Meat",
+      "tips": [
+        {
+          "emoji": "🌡️",
+          "title": "Target Temp",
+          "description": "Safe and juicy — slightly pink center is fine",
+          "tempF": 145
+        },
+        {
+          "emoji": "⏸️",
+          "title": "Rest 3 Minutes",
+          "description": "Let rest before cutting to retain juices"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 8,
+              "description": "Slight pink center, fully safe",
+              "tempF": 145
+            },
+            {
+              "label": "Well Done",
+              "minutes": 12,
+              "description": "Fully cooked through",
+              "tempF": 160
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 15,
+              "description": "Moist center, golden crust",
+              "tempF": 145
+            },
+            {
+              "label": "Well Done",
+              "minutes": 22,
+              "description": "Fully cooked throughout",
+              "tempF": 160
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 10,
+              "description": "Grill marks, juicy center",
+              "tempF": 145
+            },
+            {
+              "label": "Well Done",
+              "minutes": 14,
+              "description": "Fully cooked, caramelized exterior",
+              "tempF": 160
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mushrooms",
+      "name": "Mushrooms",
+      "emoji": "🍄",
+      "description": "Earthy mushrooms sautéed to golden, meaty perfection",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "🚫",
+          "title": "Don't Crowd",
+          "description": "Cook in a single layer or they steam instead of sear"
+        },
+        {
+          "emoji": "🧂",
+          "title": "Salt at the End",
+          "description": "Salt late to prevent excess moisture release"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Golden",
+              "minutes": 5,
+              "description": "Lightly golden, still plump"
+            },
+            {
+              "label": "Deeply Caramelized",
+              "minutes": 10,
+              "description": "Deep brown, meaty texture, rich flavor"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 425,
+          "doneness": [
+            {
+              "label": "Roasted",
+              "minutes": 15,
+              "description": "Golden edges, tender throughout"
+            },
+            {
+              "label": "Crispy",
+              "minutes": 22,
+              "description": "Deeply roasted, crispy edges"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zucchini",
+      "name": "Zucchini",
+      "emoji": "🥒",
+      "description": "Tender summer squash with a mild, slightly sweet flavor",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "🔪",
+          "title": "Cut Evenly",
+          "description": "Uniform slices cook at the same rate"
+        },
+        {
+          "emoji": "🧂",
+          "title": "Salt & Pat",
+          "description": "Salt slices 10 min ahead, pat dry to avoid sogginess"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Tender-Crisp",
+              "minutes": 4,
+              "description": "Slight bite, bright green color"
+            },
+            {
+              "label": "Golden",
+              "minutes": 7,
+              "description": "Golden edges, soft center"
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Tender-Crisp",
+              "minutes": 5,
+              "description": "Grill marks, still firm"
+            },
+            {
+              "label": "Charred",
+              "minutes": 8,
+              "description": "Deep char lines, fully tender"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 425,
+          "doneness": [
+            {
+              "label": "Roasted",
+              "minutes": 18,
+              "description": "Golden and tender throughout"
+            },
+            {
+              "label": "Caramelized",
+              "minutes": 25,
+              "description": "Deep color, sweet concentrated flavor"
+            }
+          ]
+        },
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Tender-Crisp",
+              "minutes": 3,
+              "description": "Bright green, firm bite — drain immediately"
+            },
+            {
+              "label": "Soft",
+              "minutes": 6,
+              "description": "Fully soft, good for soups or purees"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Tender-Crisp",
+              "minutes": 4,
+              "description": "Vibrant green, slight snap"
+            },
+            {
+              "label": "Soft",
+              "minutes": 7,
+              "description": "Fully tender, no waterlogging"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cauliflower",
+      "name": "Cauliflower",
+      "emoji": "🥦",
+      "description": "Versatile brassica that caramelizes beautifully with high heat",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "💧",
+          "title": "Dry Before Roasting",
+          "description": "Pat florets dry for better browning"
+        },
+        {
+          "emoji": "🫒",
+          "title": "Coat Well",
+          "description": "Toss generously in oil to prevent drying out"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 425,
+          "doneness": [
+            {
+              "label": "Tender",
+              "minutes": 20,
+              "description": "Soft with light golden edges"
+            },
+            {
+              "label": "Caramelized",
+              "minutes": 30,
+              "description": "Deep golden, nutty and sweet"
+            }
+          ]
+        },
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Seared",
+              "minutes": 8,
+              "description": "Golden crust, tender inside"
+            },
+            {
+              "label": "Charred",
+              "minutes": 12,
+              "description": "Deeply browned, crispy edges"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Tender-Crisp",
+              "minutes": 5,
+              "description": "Firm bite, bright white"
+            },
+            {
+              "label": "Soft",
+              "minutes": 8,
+              "description": "Fully tender, easy to mash"
+            }
+          ]
+        },
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Tender-Crisp",
+              "minutes": 5,
+              "description": "Firm bite, white color intact"
+            },
+            {
+              "label": "Soft",
+              "minutes": 10,
+              "description": "Fully soft, ready for mashing or soup"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carrots",
+      "name": "Carrots",
+      "emoji": "🥕",
+      "description": "Sweet, earthy root vegetable that shines roasted or glazed",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "🔪",
+          "title": "Cut Uniform",
+          "description": "Same thickness ensures even cooking"
+        },
+        {
+          "emoji": "🍯",
+          "title": "Glaze Option",
+          "description": "A drizzle of honey before roasting adds depth"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Tender",
+              "minutes": 20,
+              "description": "Fork-tender with slight bite"
+            },
+            {
+              "label": "Caramelized",
+              "minutes": 30,
+              "description": "Deep color, sweet and jammy"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 6,
+              "description": "Bright orange, slight crunch"
+            },
+            {
+              "label": "Soft",
+              "minutes": 10,
+              "description": "Fully soft, easy to eat"
+            }
+          ]
+        },
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Glazed",
+              "minutes": 10,
+              "description": "Lightly caramelized with a sticky glaze"
+            },
+            {
+              "label": "Deeply Glazed",
+              "minutes": 15,
+              "description": "Intensely sweet, deep golden color"
+            }
+          ]
+        },
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 5,
+              "description": "Bright orange, slight crunch — drain promptly"
+            },
+            {
+              "label": "Soft",
+              "minutes": 10,
+              "description": "Fully soft, ideal for mashing or soups"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "white-rice",
+      "name": "White Rice",
+      "emoji": "🍚",
+      "description": "Fluffy long-grain white rice, the perfect canvas for any dish",
+      "category": "Grains",
+      "tips": [
+        {
+          "emoji": "💧",
+          "title": "Rinse First",
+          "description": "Rinse until water runs clear to remove excess starch"
+        },
+        {
+          "emoji": "🚫",
+          "title": "Don't Lift the Lid",
+          "description": "Keep covered during cooking and resting"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "stovetop",
+          "label": "Stovetop",
+          "emoji": "🍳",
+          "heatLevel": "LOW HEAT (after boil)",
+          "doneness": [
+            {
+              "label": "Fluffy",
+              "minutes": 18,
+              "description": "Light, separated grains — rest 5 min covered"
+            }
+          ]
+        },
+        {
+          "id": "rice-cooker",
+          "label": "Rice Cooker",
+          "emoji": "⚡",
+          "heatLevel": "AUTOMATIC",
+          "doneness": [
+            {
+              "label": "Perfect",
+              "minutes": 25,
+              "description": "Consistently fluffy every time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quinoa",
+      "name": "Quinoa",
+      "emoji": "🌾",
+      "description": "Protein-rich ancient grain with a light, nutty flavor",
+      "category": "Grains",
+      "tips": [
+        {
+          "emoji": "💧",
+          "title": "Rinse Well",
+          "description": "Removes bitter saponin coating"
+        },
+        {
+          "emoji": "⏸️",
+          "title": "Rest Covered",
+          "description": "Let sit 5 min off heat to finish steaming"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "stovetop",
+          "label": "Stovetop",
+          "emoji": "🍳",
+          "heatLevel": "LOW HEAT (after boil)",
+          "doneness": [
+            {
+              "label": "Fluffy",
+              "minutes": 15,
+              "description": "Grains have unfurled tails, fully cooked"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 375,
+          "doneness": [
+            {
+              "label": "Toasted & Fluffy",
+              "minutes": 20,
+              "description": "Slightly nutty, evenly cooked"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "basmati-rice",
+      "name": "Basmati Rice",
+      "emoji": "🍛",
+      "description": "Fragrant long-grain rice with a delicate floral aroma",
+      "category": "Grains",
+      "tips": [
+        {
+          "emoji": "💧",
+          "title": "Soak 20 Min",
+          "description": "Soaking before cooking yields longer, fluffier grains"
+        },
+        {
+          "emoji": "🌿",
+          "title": "Add Aromatics",
+          "description": "A bay leaf or cardamom pod elevates the fragrance"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "stovetop",
+          "label": "Stovetop",
+          "emoji": "🍳",
+          "heatLevel": "LOW HEAT (after boil)",
+          "doneness": [
+            {
+              "label": "Fluffy",
+              "minutes": 15,
+              "description": "Long, separated grains — rest 5 min covered"
+            }
+          ]
+        },
+        {
+          "id": "rice-cooker",
+          "label": "Rice Cooker",
+          "emoji": "⚡",
+          "heatLevel": "AUTOMATIC",
+          "doneness": [
+            {
+              "label": "Perfect",
+              "minutes": 25,
+              "description": "Aromatic and fluffy every time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bacon",
+      "name": "Bacon",
+      "emoji": "🥓",
+      "description": "Streaky bacon cooked to your preferred crispiness",
+      "category": "Meat",
+      "tips": [
+        {
+          "emoji": "🌡️",
+          "title": "Start Cold Pan",
+          "description": "Cold pan renders fat slowly for even crispiness"
+        },
+        {
+          "emoji": "📄",
+          "title": "Paper Towel",
+          "description": "Drain on paper towel to absorb excess grease"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Soft",
+              "minutes": 4,
+              "description": "Pliable, lightly cooked, no crunch"
+            },
+            {
+              "label": "Crispy",
+              "minutes": 7,
+              "description": "Golden and crispy with slight chew"
+            },
+            {
+              "label": "Extra Crispy",
+              "minutes": 10,
+              "description": "Deep golden, shattering crunch"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Soft",
+              "minutes": 12,
+              "description": "Even cook, pliable strips"
+            },
+            {
+              "label": "Crispy",
+              "minutes": 18,
+              "description": "Evenly crispy, less splatter than pan"
+            },
+            {
+              "label": "Extra Crispy",
+              "minutes": 22,
+              "description": "Deeply caramelized, flat and crunchy"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 375,
+          "doneness": [
+            {
+              "label": "Crispy",
+              "minutes": 8,
+              "description": "Crispy all over, less grease"
+            },
+            {
+              "label": "Extra Crispy",
+              "minutes": 11,
+              "description": "Maximum crunch, very lean result"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sausages",
+      "name": "Sausages",
+      "emoji": "🌭",
+      "description": "Juicy pork sausages with a golden caramelised casing",
+      "category": "Meat",
+      "tips": [
+        {
+          "emoji": "🚫",
+          "title": "Don't Pierce",
+          "description": "Piercing loses juices — keep the casing intact"
+        },
+        {
+          "emoji": "🔄",
+          "title": "Turn Often",
+          "description": "Rotate every few minutes for even colour"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 12,
+              "description": "Golden casing, fully cooked through",
+              "tempF": 160
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 16,
+              "description": "Deep colour, slightly firmer texture",
+              "tempF": 165
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 14,
+              "description": "Grill marks, juicy center",
+              "tempF": 160
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 18,
+              "description": "Deep char lines, smoky flavour",
+              "tempF": 165
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 20,
+              "description": "Evenly cooked, golden skin",
+              "tempF": 160
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 26,
+              "description": "Deep golden casing, very tender inside",
+              "tempF": 165
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lamb-chops",
+      "name": "Lamb Chops",
+      "emoji": "🥩",
+      "description": "Tender lamb chops with a herb-crusted sear",
+      "category": "Meat",
+      "tips": [
+        {
+          "emoji": "🌡️",
+          "title": "Room Temp",
+          "description": "Let rest out of fridge 20 min before cooking"
+        },
+        {
+          "emoji": "🧄",
+          "title": "Garlic & Rosemary",
+          "description": "Infuse the pan with garlic and rosemary for depth"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Medium Rare",
+              "minutes": 4,
+              "description": "Pink juicy center, golden crust",
+              "tempF": 130
+            },
+            {
+              "label": "Medium",
+              "minutes": 6,
+              "description": "Slight pink, fully flavourful",
+              "tempF": 140
+            },
+            {
+              "label": "Well Done",
+              "minutes": 9,
+              "description": "Fully cooked through, firm texture",
+              "tempF": 160
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Medium Rare",
+              "minutes": 5,
+              "description": "Pink center with char marks",
+              "tempF": 130
+            },
+            {
+              "label": "Medium",
+              "minutes": 7,
+              "description": "Light pink, smoky flavour",
+              "tempF": 140
+            },
+            {
+              "label": "Well Done",
+              "minutes": 10,
+              "description": "Fully cooked, deep grill marks",
+              "tempF": 160
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "duck-breast",
+      "name": "Duck Breast",
+      "emoji": "🦆",
+      "description": "Rich, flavourful duck breast with crispy rendered skin",
+      "category": "Meat",
+      "tips": [
+        {
+          "emoji": "🔪",
+          "title": "Score the Skin",
+          "description": "Cross-hatch the fat cap to help it render evenly"
+        },
+        {
+          "emoji": "❄️",
+          "title": "Start Skin Down",
+          "description": "Place in a cold pan skin-side down — heat gradually to render fat"
+        },
+        {
+          "emoji": "⏸️",
+          "title": "Rest 5 Min",
+          "description": "Essential — duck tightens quickly when cut"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM HEAT (start cold)",
+          "doneness": [
+            {
+              "label": "Medium Rare",
+              "minutes": 14,
+              "description": "Crispy skin, pink blush center — the sweet spot",
+              "tempF": 135
+            },
+            {
+              "label": "Medium",
+              "minutes": 18,
+              "description": "Crispy skin, slightly pink center",
+              "tempF": 145
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Medium Rare",
+              "minutes": 8,
+              "description": "Finish in oven after pan sear — pink center",
+              "tempF": 135
+            },
+            {
+              "label": "Medium",
+              "minutes": 12,
+              "description": "Finish in oven — lightly pink, fully rendered skin",
+              "tempF": 145
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mussels",
+      "name": "Mussels",
+      "emoji": "🦪",
+      "description": "Briny, tender mussels steamed open in wine or broth",
+      "category": "Fish",
+      "tips": [
+        {
+          "emoji": "🚫",
+          "title": "Discard Closed Ones",
+          "description": "Any mussel that doesn't open after cooking should be discarded"
+        },
+        {
+          "emoji": "🧹",
+          "title": "Scrub & Debeard",
+          "description": "Scrub shells and pull off the stringy beard before cooking"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Just Opened",
+              "minutes": 5,
+              "description": "Shells open, tender and juicy — stop immediately"
+            },
+            {
+              "label": "Fully Steamed",
+              "minutes": 7,
+              "description": "Fully cooked, slightly firmer texture"
+            }
+          ]
+        },
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Just Opened",
+              "minutes": 6,
+              "description": "Sauté in wine or garlic butter until shells open"
+            },
+            {
+              "label": "Fully Cooked",
+              "minutes": 8,
+              "description": "Deeply flavoured, sauce reduced"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tuna-steak",
+      "name": "Tuna Steak",
+      "emoji": "🐟",
+      "description": "Meaty tuna steak seared fast and hot like a fine cut of beef",
+      "category": "Fish",
+      "tips": [
+        {
+          "emoji": "🔥",
+          "title": "Very Hot Pan",
+          "description": "Get the pan smoking hot — tuna sears in seconds"
+        },
+        {
+          "emoji": "⏱️",
+          "title": "Timing is Everything",
+          "description": "Every extra second pushes it from rare to well done fast"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Rare",
+              "minutes": 1,
+              "description": "Deep red center, seared crust — restaurant style",
+              "tempF": 110
+            },
+            {
+              "label": "Medium Rare",
+              "minutes": 2,
+              "description": "Warm pink center, fully seared",
+              "tempF": 125
+            },
+            {
+              "label": "Medium",
+              "minutes": 3,
+              "description": "Light pink center, firm texture",
+              "tempF": 140
+            },
+            {
+              "label": "Well Done",
+              "minutes": 5,
+              "description": "Fully opaque throughout",
+              "tempF": 160
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Rare",
+              "minutes": 2,
+              "description": "Grill marks, raw red center",
+              "tempF": 110
+            },
+            {
+              "label": "Medium Rare",
+              "minutes": 3,
+              "description": "Warm pink center with char marks",
+              "tempF": 125
+            },
+            {
+              "label": "Well Done",
+              "minutes": 6,
+              "description": "Fully cooked, charred exterior",
+              "tempF": 160
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "scallops",
+      "name": "Scallops",
+      "emoji": "🐚",
+      "description": "Sweet, delicate scallops with a golden caramelised crust",
+      "category": "Fish",
+      "tips": [
+        {
+          "emoji": "💧",
+          "title": "Pat Very Dry",
+          "description": "Moisture is the enemy — pat dry thoroughly for a proper sear"
+        },
+        {
+          "emoji": "🚫",
+          "title": "Don't Move Them",
+          "description": "Leave untouched for 90 seconds to build the crust"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Golden Sear",
+              "minutes": 3,
+              "description": "Deep golden crust, translucent center — perfect"
+            },
+            {
+              "label": "Cooked Through",
+              "minutes": 4,
+              "description": "Fully opaque, slightly firmer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calamari",
+      "name": "Calamari",
+      "emoji": "🦑",
+      "description": "Tender squid rings — quick sear or slow braise, never in between",
+      "category": "Fish",
+      "tips": [
+        {
+          "emoji": "⚡",
+          "title": "Fast or Slow",
+          "description": "Under 2 min or over 30 min — anything in between turns rubbery"
+        },
+        {
+          "emoji": "🔪",
+          "title": "Score the Body",
+          "description": "Cross-hatch cuts help it curl and cook evenly"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Tender Sear",
+              "minutes": 2,
+              "description": "Quick sear — just opaque, very tender"
+            },
+            {
+              "label": "Braised",
+              "minutes": 35,
+              "description": "Long slow cook — meltingly tender in sauce"
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Charred",
+              "minutes": 3,
+              "description": "Lightly charred, tender and smoky"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cod",
+      "name": "Cod",
+      "emoji": "🐠",
+      "description": "Flaky white fish with a mild flavour and firm texture",
+      "category": "Fish",
+      "tips": [
+        {
+          "emoji": "💧",
+          "title": "Pat Dry",
+          "description": "Dry the surface for a better sear and to prevent sticking"
+        },
+        {
+          "emoji": "🧂",
+          "title": "Season Generously",
+          "description": "Mild fish needs bold seasoning — don't hold back on salt"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Flaky & Moist",
+              "minutes": 6,
+              "description": "Golden crust, just flaking at the thickest point",
+              "tempF": 130
+            },
+            {
+              "label": "Fully Cooked",
+              "minutes": 9,
+              "description": "Fully opaque and flaky throughout",
+              "tempF": 145
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Flaky & Moist",
+              "minutes": 12,
+              "description": "Tender and just cooked through",
+              "tempF": 130
+            },
+            {
+              "label": "Fully Cooked",
+              "minutes": 16,
+              "description": "Firm, fully flaked, easy to serve",
+              "tempF": 145
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Flaky & Moist",
+              "minutes": 8,
+              "description": "Delicate texture, no colour — clean flavour",
+              "tempF": 130
+            },
+            {
+              "label": "Fully Cooked",
+              "minutes": 12,
+              "description": "Fully cooked, very soft flake",
+              "tempF": 145
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sweet-potato",
+      "name": "Sweet Potato",
+      "emoji": "🍠",
+      "description": "Naturally sweet, creamy flesh with a caramelised skin",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "🔪",
+          "title": "Uniform Size",
+          "description": "Cut evenly so everything cooks at the same rate"
+        },
+        {
+          "emoji": "🫒",
+          "title": "Oil Generously",
+          "description": "Coat well for even caramelisation and crispy edges"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Tender",
+              "minutes": 25,
+              "description": "Soft throughout, lightly caramelised edges"
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 35,
+              "description": "Deep golden, sweet and jammy"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 390,
+          "doneness": [
+            {
+              "label": "Tender",
+              "minutes": 15,
+              "description": "Soft center, lightly crisp skin"
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 22,
+              "description": "Crispy skin, deeply sweet interior"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eggplant",
+      "name": "Eggplant",
+      "emoji": "🍆",
+      "description": "Silky, meaty vegetable that absorbs flavour beautifully",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "🧂",
+          "title": "Salt First",
+          "description": "Salt slices and rest 20 min to draw out bitterness and moisture"
+        },
+        {
+          "emoji": "🫒",
+          "title": "Use Enough Oil",
+          "description": "Eggplant absorbs oil quickly — don't skimp or it will dry out"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Golden",
+              "minutes": 8,
+              "description": "Golden cut face, slightly firm center"
+            },
+            {
+              "label": "Silky",
+              "minutes": 12,
+              "description": "Deep golden, fully soft and creamy inside"
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Charred",
+              "minutes": 10,
+              "description": "Char marks, smoky flavour, tender flesh"
+            },
+            {
+              "label": "Deeply Charred",
+              "minutes": 15,
+              "description": "Heavily charred skin, meltingly soft inside"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 425,
+          "doneness": [
+            {
+              "label": "Roasted",
+              "minutes": 25,
+              "description": "Golden and tender throughout"
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 35,
+              "description": "Deep colour, concentrated sweet-smoky flavour"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bell-peppers",
+      "name": "Bell Peppers",
+      "emoji": "🫑",
+      "description": "Sweet, crunchy peppers that caramelise into something magical",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "🔪",
+          "title": "Remove Seeds",
+          "description": "Clean out seeds and white pith for best flavour"
+        },
+        {
+          "emoji": "🔥",
+          "title": "Char for Depth",
+          "description": "Blackened skin adds a wonderful smoky sweetness"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Tender-Crisp",
+              "minutes": 5,
+              "description": "Bright colour, slight bite"
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 12,
+              "description": "Soft, sweet, golden edges"
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Charred",
+              "minutes": 10,
+              "description": "Charred skin, smoky sweet flesh"
+            },
+            {
+              "label": "Fully Charred",
+              "minutes": 15,
+              "description": "Blackened skin, silky interior — peel before serving"
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 425,
+          "doneness": [
+            {
+              "label": "Roasted",
+              "minutes": 20,
+              "description": "Soft and sweet, lightly golden"
+            },
+            {
+              "label": "Deeply Roasted",
+              "minutes": 30,
+              "description": "Concentrated flavour, very soft"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spinach",
+      "name": "Spinach",
+      "emoji": "🥬",
+      "description": "Tender spinach leaves that wilt down in seconds",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "🌊",
+          "title": "High Heat, Fast",
+          "description": "Cook on high heat and serve immediately — spinach wilts fast"
+        },
+        {
+          "emoji": "🧄",
+          "title": "Garlic First",
+          "description": "Sauté garlic 30 seconds before adding spinach for depth"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Wilted",
+              "minutes": 2,
+              "description": "Just wilted, bright green, still tender"
+            },
+            {
+              "label": "Fully Cooked",
+              "minutes": 4,
+              "description": "Deeply wilted, concentrated flavour"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "green-beans",
+      "name": "Green Beans",
+      "emoji": "🌱",
+      "description": "Crisp, vibrant green beans — simple and versatile",
+      "category": "Greens",
+      "tips": [
+        {
+          "emoji": "✂️",
+          "title": "Trim the Ends",
+          "description": "Snap or cut off the stem end before cooking"
+        },
+        {
+          "emoji": "🧊",
+          "title": "Ice Bath",
+          "description": "Plunge in ice water after boiling to preserve colour and crunch"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 4,
+              "description": "Bright green, firm snap — drain and ice bath"
+            },
+            {
+              "label": "Tender",
+              "minutes": 7,
+              "description": "Fully cooked, softer bite"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 5,
+              "description": "Vibrant and firm"
+            },
+            {
+              "label": "Tender",
+              "minutes": 8,
+              "description": "Fully soft, no crunch"
+            }
+          ]
+        },
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Blistered",
+              "minutes": 6,
+              "description": "Lightly charred, tender-crisp with great flavour"
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 10,
+              "description": "Deep colour, sweet and nutty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lentils",
+      "name": "Lentils",
+      "emoji": "🫘",
+      "description": "Protein-packed lentils — hearty, earthy and endlessly versatile",
+      "category": "Grains",
+      "tips": [
+        {
+          "emoji": "🚫",
+          "title": "No Pre-Soak Needed",
+          "description": "Red lentils cook fast without soaking — green/brown benefit from 30 min"
+        },
+        {
+          "emoji": "🧂",
+          "title": "Salt at the End",
+          "description": "Adding salt too early toughens the skins"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "stovetop",
+          "label": "Stovetop",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Al Dente",
+              "minutes": 15,
+              "description": "Tender but holding shape — great for salads"
+            },
+            {
+              "label": "Soft",
+              "minutes": 25,
+              "description": "Fully soft, ideal for soups and dals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "couscous",
+      "name": "Couscous",
+      "emoji": "🍚",
+      "description": "Light, fluffy North African grain ready in minutes",
+      "category": "Grains",
+      "tips": [
+        {
+          "emoji": "💧",
+          "title": "Boiling Water Ratio",
+          "description": "Use 1:1.5 couscous to boiling water for fluffy results"
+        },
+        {
+          "emoji": "🍴",
+          "title": "Fluff with Fork",
+          "description": "Fluff with a fork after resting — never stir or it clumps"
+        }
+      ],
+      "cookMethods": [
+        {
+          "id": "stovetop",
+          "label": "Stovetop",
+          "emoji": "🍳",
+          "heatLevel": "NO HEAT (boiling water)",
+          "doneness": [
+            {
+              "label": "Fluffy",
+              "minutes": 5,
+              "description": "Pour boiling water, cover, rest 5 min — done"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "translations": {
+    "es": {
+      "eggs": {
+        "name": "Huevos",
+        "description": "Huevos de corral con yemas doradas de granjas locales",
+        "tips": [
+          {
+            "title": "Baño de hielo",
+            "description": "Sumérgelos inmediatamente para detener la cocción"
+          },
+          {
+            "title": "Temperatura ambiente",
+            "description": "Sácalos 10 min antes para una cocción uniforme"
+          }
+        ],
+        "methods": {
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Cremoso y jugoso",
+                "description": "Yema líquida, clara cuajada"
+              },
+              {
+                "label": "Clara firme, yema blanda",
+                "description": "Clara completamente cuajada, yema cremosa"
+              },
+              {
+                "label": "Totalmente cuajado",
+                "description": "Duro, completamente cuajado"
+              }
+            ]
+          },
+          "pan": {
+            "doneness": [
+              {
+                "label": "Frito con yema",
+                "description": "Yema líquida, bordes de clara cuajados"
+              },
+              {
+                "label": "Vuelta y vuelta",
+                "description": "Yema ligeramente líquida"
+              },
+              {
+                "label": "Bien hecho",
+                "description": "Yema totalmente cuajada"
+              }
+            ]
+          },
+          "steaming": {
+            "doneness": [
+              {
+                "label": "Blando",
+                "description": "Sedoso, centro ligeramente líquido"
+              },
+              {
+                "label": "Medio",
+                "description": "Cremoso, clara totalmente cuajada"
+              },
+              {
+                "label": "Duro",
+                "description": "Completamente cocido"
+              }
+            ]
+          }
+        }
+      },
+      "steak": {
+        "name": "Filete",
+        "description": "Cortes seleccionados de granjas locales, madurados a la perfección",
+        "tips": [
+          {
+            "title": "Secar bien",
+            "description": "Seca la superficie para un mejor sellado"
+          },
+          {
+            "title": "Dejar reposar",
+            "description": "Reposa 5 min después de cocinar para retener los jugos"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Poco hecho",
+                "description": "Centro rojo, caliente"
+              },
+              {
+                "label": "Al punto menos",
+                "description": "Centro rojo rosado"
+              },
+              {
+                "label": "Al punto",
+                "description": "Ligeramente rosado"
+              },
+              {
+                "label": "Bien hecho",
+                "description": "Completamente cocinado"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Poco hecho",
+                "description": "Centro rojo, caliente"
+              },
+              {
+                "label": "Al punto menos",
+                "description": "Centro rojo rosado"
+              },
+              {
+                "label": "Al punto",
+                "description": "Ligeramente rosado"
+              },
+              {
+                "label": "Bien hecho",
+                "description": "Completamente cocinado"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Al punto menos",
+                "description": "Tras el sellado"
+              },
+              {
+                "label": "Al punto",
+                "description": "Tras el sellado"
+              },
+              {
+                "label": "Bien hecho",
+                "description": "Tras el sellado"
+              }
+            ]
+          }
+        }
+      },
+      "salmon": {
+        "name": "Salmón",
+        "description": "Salmón atlántico salvaje, fresco cada día",
+        "tips": [
+          {
+            "title": "Con la piel hacia abajo",
+            "description": "Empieza con la piel hacia abajo para que quede crujiente"
+          },
+          {
+            "title": "Toque de limón",
+            "description": "Exprime limón justo al retirar del fuego"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Jugoso y hojaldrado",
+                "description": "Recién cocinado, centro translúcido"
+              },
+              {
+                "label": "Firme",
+                "description": "Completamente opaco, se deshace fácilmente"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Jugoso y hojaldrado",
+                "description": "Recién cocinado"
+              },
+              {
+                "label": "Firme",
+                "description": "Textura completamente cuajada"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Jugoso y hojaldrado",
+                "description": "Exterior crujiente, centro jugoso"
+              },
+              {
+                "label": "Firme",
+                "description": "Completamente cocinado, piel crujiente"
+              }
+            ]
+          }
+        }
+      },
+      "pasta": {
+        "name": "Pasta",
+        "description": "Pasta de bronce tradicional, estilo italiano",
+        "tips": [
+          {
+            "title": "Salar el agua",
+            "description": "El agua debe saber a mar"
+          },
+          {
+            "title": "Guardar agua de pasta",
+            "description": "Reserva un vaso antes de escurrir para la salsa"
+          }
+        ],
+        "methods": {
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Al dente",
+                "description": "Ligeramente firme en el centro"
+              },
+              {
+                "label": "Tierna",
+                "description": "Completamente blanda, textura clásica"
+              },
+              {
+                "label": "Muy blanda",
+                "description": "Muy blanda, bien cocinada"
+              }
+            ]
+          }
+        }
+      },
+      "chicken": {
+        "name": "Pechuga de pollo",
+        "description": "Pechuga de pollo campero, tierna y jugosa",
+        "tips": [
+          {
+            "title": "Usa termómetro",
+            "description": "Temperatura objetivo para pollo jugoso y seguro"
+          },
+          {
+            "title": "Reposar 5 minutos",
+            "description": "Reposar redistribuye los jugos"
+          }
+        ],
+        "methods": {
+          "oven": {
+            "doneness": [
+              {
+                "label": "Jugosa",
+                "description": "Húmeda y tierna"
+              },
+              {
+                "label": "Bien hecha",
+                "description": "Completamente cocinada"
+              }
+            ]
+          },
+          "pan": {
+            "doneness": [
+              {
+                "label": "Jugosa",
+                "description": "Costra dorada"
+              },
+              {
+                "label": "Bien hecha",
+                "description": "Completamente cocinada, bordes crujientes"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Jugosa",
+                "description": "Exterior crujiente, interior jugoso"
+              },
+              {
+                "label": "Bien hecha",
+                "description": "Completamente cocinada, extra crujiente"
+              }
+            ]
+          }
+        }
+      },
+      "asparagus": {
+        "name": "Espárragos",
+        "description": "Verduras vibrantes y crujientes recolectadas en su punto de madurez",
+        "tips": [
+          {
+            "title": "Cortar los extremos",
+            "description": "Quita el centímetro leñoso del tallo"
+          },
+          {
+            "title": "Baño de hielo",
+            "description": "Escalda en agua con hielo para fijar el color vivo"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Verde brillante, ligeramente firme"
+              },
+              {
+                "label": "Tierno",
+                "description": "Completamente blando, caramelizado"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Ligeramente tostado, verde brillante"
+              },
+              {
+                "label": "Tierno",
+                "description": "Completamente asado, puntas caramelizadas"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Verde brillante, ligeramente firme"
+              },
+              {
+                "label": "Tierno",
+                "description": "Completamente blando, textura sedosa"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Puntas crujientes, tallos tiernos"
+              },
+              {
+                "label": "Tierno",
+                "description": "Completamente blando con bordes crujientes"
+              }
+            ]
+          }
+        }
+      },
+      "shrimp": {
+        "name": "Gambas",
+        "description": "Gambas salvajes frescas, dulces y tiernas",
+        "tips": [
+          {
+            "title": "Descongelar bien",
+            "description": "Descongela en agua fría 15 min, nunca en microondas"
+          },
+          {
+            "title": "Secar bien",
+            "description": "Sécalas antes de cocinar para mejor sellado"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Forma de C jugosa",
+                "description": "Rosadas, curvadas en C — perfectas"
+              },
+              {
+                "label": "Forma de O firme",
+                "description": "Completamente cocinadas, muy curvadas"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Forma de C jugosa",
+                "description": "Rosadas con marcas de parrilla"
+              },
+              {
+                "label": "Tostadas",
+                "description": "Tostado intenso, sabor ahumado"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Jugosas",
+                "description": "Exterior crujiente, interior tierno"
+              },
+              {
+                "label": "Extra crujientes",
+                "description": "Completamente crujientes"
+              }
+            ]
+          }
+        }
+      },
+      "grilled-cheese": {
+        "name": "Sandwich de queso",
+        "description": "Clásico sandwich dorado con queso fundido en el centro",
+        "tips": [
+          {
+            "title": "Mantequillar el pan",
+            "description": "Cubre hasta los bordes para un dorado uniforme"
+          },
+          {
+            "title": "Fuego lento",
+            "description": "Calor medio-bajo deja fundir el queso antes de quemar el pan"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Dorado",
+                "description": "Costra ligeramente dorada, queso completamente fundido"
+              },
+              {
+                "label": "Oscuro y crujiente",
+                "description": "Muy dorado, extra crujiente, centro jugoso"
+              }
+            ]
+          }
+        }
+      },
+      "broccoli": {
+        "name": "Brócoli",
+        "description": "Floretes de brócoli fresco, vibrantes y nutritivos",
+        "tips": [
+          {
+            "title": "Floretes uniformes",
+            "description": "Corta piezas del mismo tamaño para cocción uniforme"
+          },
+          {
+            "title": "No cocer demasiado",
+            "description": "Mantenlo verde brillante — si amarillea está demasiado"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Vibrante y crujiente",
+                "description": "Verde brillante, ligeramente tostado"
+              },
+              {
+                "label": "Tierno",
+                "description": "Completamente blando, bordes caramelizados"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Puntas crujientes",
+                "description": "Extremos crujientes, tallos tiernos"
+              },
+              {
+                "label": "Tostado",
+                "description": "Asado intenso, sabor a nuez caramelizado"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Verde brillante, ligeramente firme"
+              },
+              {
+                "label": "Completamente tierno",
+                "description": "Blando por completo, sin crujido"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Crujiente",
+                "description": "Floretes crujientes, interior tierno"
+              },
+              {
+                "label": "Extra crujiente",
+                "description": "Muy crujiente, puntas tostadas"
+              }
+            ]
+          },
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Verde brillante, mordida firme — escurrir inmediatamente"
+              },
+              {
+                "label": "Completamente tierno",
+                "description": "Blando por completo, ideal para sopas"
+              }
+            ]
+          }
+        }
+      },
+      "smashed-potatoes": {
+        "name": "Patatas aplastadas",
+        "description": "Patatas baby aplastadas y asadas a la perfección crujiente",
+        "tips": [
+          {
+            "title": "Hervir primero",
+            "description": "Hierve hasta que estén blandas antes de aplastar"
+          },
+          {
+            "title": "Aceite generoso",
+            "description": "Cubre bien en aceite de oliva para máxima crujiente"
+          }
+        ],
+        "methods": {
+          "oven": {
+            "doneness": [
+              {
+                "label": "Bordes crujientes",
+                "description": "Bordes dorados, centro suave y esponjoso"
+              },
+              {
+                "label": "Extra crujiente",
+                "description": "Muy crujiente por todos lados, dorado profundo"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Bordes crujientes",
+                "description": "Dorado y crujiente en menos tiempo"
+              },
+              {
+                "label": "Extra crujiente",
+                "description": "Crujiente intenso por completo"
+              }
+            ]
+          }
+        }
+      },
+      "tofu": {
+        "name": "Tofu",
+        "description": "Tofu firme prensado y cocinado a la perfección dorada",
+        "tips": [
+          {
+            "title": "Prensarlo",
+            "description": "Prensa 30 min para eliminar humedad y mejorar la textura"
+          },
+          {
+            "title": "Maicena",
+            "description": "Cubre ligeramente con maicena para exterior extra crujiente"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Costra dorada",
+                "description": "Dorado por todos lados, centro blando"
+              },
+              {
+                "label": "Crujiente",
+                "description": "Exterior muy crujiente, interior elástico"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Dorado",
+                "description": "Uniformemente dorado, ligeramente elástico"
+              },
+              {
+                "label": "Crujiente",
+                "description": "Muy crujiente, casi textura de cecina"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Dorado",
+                "description": "Exterior crujiente, interior tierno"
+              },
+              {
+                "label": "Extra crujiente",
+                "description": "Crujiente máximo por completo"
+              }
+            ]
+          }
+        }
+      },
+      "corn": {
+        "name": "Mazorca de maíz",
+        "description": "Maíz dulce de verano, jugoso y asado a la perfección",
+        "tips": [
+          {
+            "title": "Mantequilla en caliente",
+            "description": "Aplica mantequilla inmediatamente para que se derrita"
+          },
+          {
+            "title": "Remojar para asar",
+            "description": "Remoja en agua 30 min antes de asar con la hoja"
+          }
+        ],
+        "methods": {
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Dulce y tierno",
+                "description": "Recién cocinado, dulce y jugoso"
+              },
+              {
+                "label": "Muy tierno",
+                "description": "Granos más blandos, completamente cocinados"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Ligeramente tostado",
+                "description": "Dulce con ligeras marcas de parrilla"
+              },
+              {
+                "label": "Muy tostado",
+                "description": "Ahumado, granos caramelizados"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Asado",
+                "description": "Tierno con bordes ligeramente caramelizados"
+              },
+              {
+                "label": "Tostado",
+                "description": "Muy asado, dulzor intenso"
+              }
+            ]
+          }
+        }
+      },
+      "pork-chop": {
+        "name": "Chuleta de cerdo",
+        "description": "Jugosa chuleta de cerdo con hueso y sellado dorado",
+        "tips": [
+          {
+            "title": "Temperatura objetivo",
+            "description": "Seguro y jugoso — ligeramente rosado en el centro está bien"
+          },
+          {
+            "title": "Reposar 3 minutos",
+            "description": "Reposa antes de cortar para retener los jugos"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Jugosa",
+                "description": "Ligeramente rosado en el centro, completamente seguro"
+              },
+              {
+                "label": "Bien hecha",
+                "description": "Completamente cocinada"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Jugosa",
+                "description": "Centro húmedo, costra dorada"
+              },
+              {
+                "label": "Bien hecha",
+                "description": "Completamente cocinada"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Jugosa",
+                "description": "Marcas de parrilla, centro jugoso"
+              },
+              {
+                "label": "Bien hecha",
+                "description": "Completamente cocinada, exterior caramelizado"
+              }
+            ]
+          }
+        }
+      },
+      "mushrooms": {
+        "name": "Setas",
+        "description": "Setas terrosas salteadas a la perfección dorada y carnosa",
+        "tips": [
+          {
+            "title": "No amontonar",
+            "description": "Cocina en una sola capa o se cuecen al vapor en lugar de sellarse"
+          },
+          {
+            "title": "Salar al final",
+            "description": "Sala tarde para evitar exceso de humedad"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Doradas",
+                "description": "Ligeramente doradas, todavía jugosas"
+              },
+              {
+                "label": "Muy caramelizadas",
+                "description": "Marrón intenso, textura carnosa, sabor rico"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Asadas",
+                "description": "Bordes dorados, tiernas por dentro"
+              },
+              {
+                "label": "Crujientes",
+                "description": "Muy asadas, bordes crujientes"
+              }
+            ]
+          }
+        }
+      },
+      "zucchini": {
+        "name": "Calabacín",
+        "description": "Calabaza de verano tierna con sabor suave y ligeramente dulce",
+        "tips": [
+          {
+            "title": "Cortar uniforme",
+            "description": "Las rodajas uniformes se cocinan al mismo ritmo"
+          },
+          {
+            "title": "Salar y secar",
+            "description": "Sala las rodajas 10 min antes, seca para evitar reblandecimiento"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Ligeramente firme, color verde brillante"
+              },
+              {
+                "label": "Dorado",
+                "description": "Bordes dorados, centro blando"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Marcas de parrilla, todavía firme"
+              },
+              {
+                "label": "Tostado",
+                "description": "Marcas oscuras de parrilla, completamente tierno"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Asado",
+                "description": "Dorado y tierno por completo"
+              },
+              {
+                "label": "Caramelizado",
+                "description": "Color intenso, sabor dulce concentrado"
+              }
+            ]
+          },
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Verde brillante, mordida firme — escurrir inmediatamente"
+              },
+              {
+                "label": "Blando",
+                "description": "Completamente blando, ideal para sopas o purés"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Verde brillante, ligeramente firme"
+              },
+              {
+                "label": "Blando",
+                "description": "Completamente tierno, sin encharcarse"
+              }
+            ]
+          }
+        }
+      },
+      "cauliflower": {
+        "name": "Coliflor",
+        "description": "Versátil brassica que carameliza bellamente con calor alto",
+        "tips": [
+          {
+            "title": "Secar antes de asar",
+            "description": "Seca los floretes para mejor dorado"
+          },
+          {
+            "title": "Aceite abundante",
+            "description": "Cubre bien en aceite para evitar que se seque"
+          }
+        ],
+        "methods": {
+          "oven": {
+            "doneness": [
+              {
+                "label": "Tierna",
+                "description": "Blanda con bordes ligeramente dorados"
+              },
+              {
+                "label": "Caramelizada",
+                "description": "Profundamente dorada, dulce con sabor a nuez"
+              }
+            ]
+          },
+          "pan": {
+            "doneness": [
+              {
+                "label": "Sellada",
+                "description": "Costra dorada, interior tierno"
+              },
+              {
+                "label": "Tostada",
+                "description": "Muy dorada, bordes crujientes"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierna",
+                "description": "Mordida firme, color blanco brillante"
+              },
+              {
+                "label": "Blanda",
+                "description": "Completamente tierna, fácil de aplastar"
+              }
+            ]
+          },
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierna",
+                "description": "Mordida firme, color blanco intacto"
+              },
+              {
+                "label": "Blanda",
+                "description": "Completamente blanda, lista para aplastar o sopa"
+              }
+            ]
+          }
+        }
+      },
+      "carrots": {
+        "name": "Zanahorias",
+        "description": "Raíz dulce y terrosa que brilla asada o glaseada",
+        "tips": [
+          {
+            "title": "Cortar uniforme",
+            "description": "El mismo grosor asegura una cocción uniforme"
+          },
+          {
+            "title": "Opción glaseada",
+            "description": "Un chorrito de miel antes de asar añade profundidad"
+          }
+        ],
+        "methods": {
+          "oven": {
+            "doneness": [
+              {
+                "label": "Tiernas",
+                "description": "Blandas al tenedor con ligera mordida"
+              },
+              {
+                "label": "Caramelizadas",
+                "description": "Color intenso, dulces y melosas"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Crujiente-tiernas",
+                "description": "Naranja brillante, ligeramente crujientes"
+              },
+              {
+                "label": "Blandas",
+                "description": "Completamente blandas, fáciles de comer"
+              }
+            ]
+          },
+          "pan": {
+            "doneness": [
+              {
+                "label": "Glaseadas",
+                "description": "Ligeramente caramelizadas con glaseado pegajoso"
+              },
+              {
+                "label": "Muy glaseadas",
+                "description": "Intensamente dulces, color dorado profundo"
+              }
+            ]
+          },
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Crujiente-tiernas",
+                "description": "Naranja brillante, ligeramente crujientes — escurrir rápido"
+              },
+              {
+                "label": "Blandas",
+                "description": "Completamente blandas, ideales para purés o sopas"
+              }
+            ]
+          }
+        }
+      },
+      "white-rice": {
+        "name": "Arroz blanco",
+        "description": "Arroz blanco de grano largo esponjoso, el lienzo perfecto para cualquier plato",
+        "tips": [
+          {
+            "title": "Lavar primero",
+            "description": "Lava hasta que el agua salga clara para quitar el almidón"
+          },
+          {
+            "title": "No levantar la tapa",
+            "description": "Mantén tapado durante la cocción y el reposo"
+          }
+        ],
+        "methods": {
+          "stovetop": {
+            "doneness": [
+              {
+                "label": "Esponjoso",
+                "description": "Granos sueltos y ligeros — reposar 5 min tapado"
+              }
+            ]
+          },
+          "rice-cooker": {
+            "doneness": [
+              {
+                "label": "Perfecto",
+                "description": "Esponjoso y uniforme cada vez"
+              }
+            ]
+          }
+        }
+      },
+      "quinoa": {
+        "name": "Quinoa",
+        "description": "Cereal ancestral rico en proteínas con sabor ligero y a nuez",
+        "tips": [
+          {
+            "title": "Lavar bien",
+            "description": "Elimina la saponina amarga de la capa exterior"
+          },
+          {
+            "title": "Reposar tapado",
+            "description": "Deja reposar 5 min fuera del fuego para terminar al vapor"
+          }
+        ],
+        "methods": {
+          "stovetop": {
+            "doneness": [
+              {
+                "label": "Esponjosa",
+                "description": "Granos con colas desplegadas, completamente cocidos"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Tostada y esponjosa",
+                "description": "Ligeramente tostada, cocción uniforme"
+              }
+            ]
+          }
+        }
+      },
+      "basmati-rice": {
+        "name": "Arroz basmati",
+        "description": "Arroz de grano largo aromático con un delicado aroma floral",
+        "tips": [
+          {
+            "title": "Remojar 20 min",
+            "description": "Remojar antes de cocinar da granos más largos y esponjosos"
+          },
+          {
+            "title": "Añadir aromáticos",
+            "description": "Una hoja de laurel o vaina de cardamomo realza la fragancia"
+          }
+        ],
+        "methods": {
+          "stovetop": {
+            "doneness": [
+              {
+                "label": "Esponjoso",
+                "description": "Granos largos y sueltos — reposar 5 min tapado"
+              }
+            ]
+          },
+          "rice-cooker": {
+            "doneness": [
+              {
+                "label": "Perfecto",
+                "description": "Aromático y esponjoso cada vez"
+              }
+            ]
+          }
+        }
+      },
+      "bacon": {
+        "name": "Bacon",
+        "description": "Bacon ahumado cocinado a tu crujiente preferido",
+        "tips": [
+          {
+            "title": "Empezar en frío",
+            "description": "La sartén fría derrite la grasa lentamente para un crujiente uniforme"
+          },
+          {
+            "title": "Papel absorbente",
+            "description": "Escurre sobre papel de cocina para absorber el exceso de grasa"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Blando",
+                "description": "Flexible, ligeramente cocinado, sin crujido"
+              },
+              {
+                "label": "Crujiente",
+                "description": "Dorado y crujiente con ligera masticabilidad"
+              },
+              {
+                "label": "Extra crujiente",
+                "description": "Dorado intenso, crujiente como papel"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Blando",
+                "description": "Cocción uniforme, tiras flexibles"
+              },
+              {
+                "label": "Crujiente",
+                "description": "Uniformemente crujiente, menos salpicaduras"
+              },
+              {
+                "label": "Extra crujiente",
+                "description": "Profundamente caramelizado, plano y crujiente"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Crujiente",
+                "description": "Crujiente por todos lados, menos grasa"
+              },
+              {
+                "label": "Extra crujiente",
+                "description": "Crujiente máximo, resultado muy magro"
+              }
+            ]
+          }
+        }
+      },
+      "sausages": {
+        "name": "Salchichas",
+        "description": "Jugosas salchichas de cerdo con piel dorada y caramelizada",
+        "tips": [
+          {
+            "title": "No pinchar",
+            "description": "Pincharlas pierde los jugos — mantén la piel intacta"
+          },
+          {
+            "title": "Girar a menudo",
+            "description": "Rota cada pocos minutos para un color uniforme"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Jugosas",
+                "description": "Piel dorada, completamente cocinadas"
+              },
+              {
+                "label": "Caramelizadas",
+                "description": "Color intenso, textura ligeramente más firme"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Jugosas",
+                "description": "Marcas de parrilla, centro jugoso"
+              },
+              {
+                "label": "Caramelizadas",
+                "description": "Líneas de carbón profundas, sabor ahumado"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Jugosas",
+                "description": "Cocción uniforme, piel dorada"
+              },
+              {
+                "label": "Caramelizadas",
+                "description": "Piel muy dorada, interior muy tierno"
+              }
+            ]
+          }
+        }
+      },
+      "lamb-chops": {
+        "name": "Chuletas de cordero",
+        "description": "Tiernas chuletas de cordero con sellado de hierbas aromáticas",
+        "tips": [
+          {
+            "title": "Temperatura ambiente",
+            "description": "Sácalas de la nevera 20 min antes de cocinar"
+          },
+          {
+            "title": "Ajo y romero",
+            "description": "Infunde la sartén con ajo y romero para más profundidad"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Al punto menos",
+                "description": "Centro rosado y jugoso, costra dorada"
+              },
+              {
+                "label": "Al punto",
+                "description": "Ligeramente rosado, completamente sabroso"
+              },
+              {
+                "label": "Bien hecho",
+                "description": "Completamente cocinado, textura firme"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Al punto menos",
+                "description": "Centro rosado con marcas de parrilla"
+              },
+              {
+                "label": "Al punto",
+                "description": "Ligeramente rosado, sabor ahumado"
+              },
+              {
+                "label": "Bien hecho",
+                "description": "Completamente cocinado, marcas de parrilla intensas"
+              }
+            ]
+          }
+        }
+      },
+      "duck-breast": {
+        "name": "Pechuga de pato",
+        "description": "Rica y sabrosa pechuga de pato con piel crujiente y bien rendida",
+        "tips": [
+          {
+            "title": "Marcar la piel",
+            "description": "Haz cortes en la capa de grasa para que se rinda uniformemente"
+          },
+          {
+            "title": "Empezar con la piel abajo",
+            "description": "Coloca en sartén fría con la piel abajo — calienta gradualmente"
+          },
+          {
+            "title": "Reposar 5 min",
+            "description": "Esencial — el pato se tensa rápidamente al cortarlo"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Al punto menos",
+                "description": "Piel crujiente, centro rosado — el punto ideal"
+              },
+              {
+                "label": "Al punto",
+                "description": "Piel crujiente, centro ligeramente rosado"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Al punto menos",
+                "description": "Acabar en el horno tras sellar — centro rosado"
+              },
+              {
+                "label": "Al punto",
+                "description": "Acabar en el horno — ligeramente rosado, piel bien rendida"
+              }
+            ]
+          }
+        }
+      },
+      "mussels": {
+        "name": "Mejillones",
+        "description": "Mejillones tiernos y salinos al vapor con vino o caldo",
+        "tips": [
+          {
+            "title": "Descartar los cerrados",
+            "description": "Cualquier mejillón que no se abra hay que desecharlo"
+          },
+          {
+            "title": "Limpiar y desbarbar",
+            "description": "Frota las conchas y quita la hebra antes de cocinar"
+          }
+        ],
+        "methods": {
+          "steam": {
+            "doneness": [
+              {
+                "label": "Recién abiertos",
+                "description": "Conchas abiertas, tiernos y jugosos — parar inmediatamente"
+              },
+              {
+                "label": "Al vapor completo",
+                "description": "Completamente cocinados, textura ligeramente más firme"
+              }
+            ]
+          },
+          "pan": {
+            "doneness": [
+              {
+                "label": "Recién abiertos",
+                "description": "Salteados en vino o mantequilla con ajo hasta que se abran"
+              },
+              {
+                "label": "Completamente cocinados",
+                "description": "Sabor intenso, salsa reducida"
+              }
+            ]
+          }
+        }
+      },
+      "tuna-steak": {
+        "name": "Atún a la plancha",
+        "description": "Filete de atún carnoso sellado rápido y fuerte como un buen corte de carne",
+        "tips": [
+          {
+            "title": "Sartén muy caliente",
+            "description": "Calienta la sartén hasta que humee — el atún se sella en segundos"
+          },
+          {
+            "title": "El tiempo lo es todo",
+            "description": "Cada segundo extra lo lleva de crudo a bien hecho rápidamente"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Poco hecho",
+                "description": "Centro rojo intenso, costra sellada — estilo restaurante"
+              },
+              {
+                "label": "Al punto menos",
+                "description": "Centro rosado caliente, completamente sellado"
+              },
+              {
+                "label": "Al punto",
+                "description": "Centro ligeramente rosado, textura firme"
+              },
+              {
+                "label": "Bien hecho",
+                "description": "Completamente opaco por completo"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Poco hecho",
+                "description": "Marcas de parrilla, centro crudo rojo"
+              },
+              {
+                "label": "Al punto menos",
+                "description": "Centro rosado caliente con marcas de carbón"
+              },
+              {
+                "label": "Bien hecho",
+                "description": "Completamente cocinado, exterior tostado"
+              }
+            ]
+          }
+        }
+      },
+      "scallops": {
+        "name": "Vieiras",
+        "description": "Dulces y delicadas vieiras con una costra dorada y caramelizada",
+        "tips": [
+          {
+            "title": "Secar muy bien",
+            "description": "La humedad es el enemigo — seca a fondo para un sellado perfecto"
+          },
+          {
+            "title": "No moverlas",
+            "description": "Deja sin tocar 90 segundos para formar la costra"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Selladas doradas",
+                "description": "Costra dorada profunda, centro translúcido — perfectas"
+              },
+              {
+                "label": "Completamente cocinadas",
+                "description": "Completamente opacas, ligeramente más firmes"
+              }
+            ]
+          }
+        }
+      },
+      "calamari": {
+        "name": "Calamar",
+        "description": "Anillos de calamar tiernos — sellado rápido o guisado lento, nada a medias",
+        "tips": [
+          {
+            "title": "Rápido o lento",
+            "description": "Menos de 2 min o más de 30 min — lo intermedio lo vuelve gomoso"
+          },
+          {
+            "title": "Marcar el cuerpo",
+            "description": "Los cortes en cuadrícula ayudan a que se enrolle uniformemente"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Sellado tierno",
+                "description": "Sellado rápido — justo opaco, muy tierno"
+              },
+              {
+                "label": "Guisado",
+                "description": "Cocción lenta — meloso en la salsa"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Tostado",
+                "description": "Ligeramente tostado, tierno y ahumado"
+              }
+            ]
+          }
+        }
+      },
+      "cod": {
+        "name": "Bacalao",
+        "description": "Pescado blanco en escamas con sabor suave y textura firme",
+        "tips": [
+          {
+            "title": "Secar bien",
+            "description": "Seca la superficie para mejor sellado y evitar que se pegue"
+          },
+          {
+            "title": "Sazonar generosamente",
+            "description": "El pescado suave necesita condimento abundante"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Jugoso y hojaldrado",
+                "description": "Costra dorada, justo comenzando a escamar"
+              },
+              {
+                "label": "Completamente cocinado",
+                "description": "Completamente opaco y en escamas por completo"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Jugoso y hojaldrado",
+                "description": "Tierno y justo cocinado"
+              },
+              {
+                "label": "Completamente cocinado",
+                "description": "Firme, completamente escamado, fácil de servir"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Jugoso y hojaldrado",
+                "description": "Textura delicada, sin color — sabor limpio"
+              },
+              {
+                "label": "Completamente cocinado",
+                "description": "Completamente cocinado, escama muy suave"
+              }
+            ]
+          }
+        }
+      },
+      "sweet-potato": {
+        "name": "Boniato",
+        "description": "Carne naturalmente dulce y cremosa con piel caramelizada",
+        "tips": [
+          {
+            "title": "Tamaño uniforme",
+            "description": "Corta de forma pareja para que todo se cocine al mismo ritmo"
+          },
+          {
+            "title": "Aceite generoso",
+            "description": "Cubre bien para caramelización uniforme y bordes crujientes"
+          }
+        ],
+        "methods": {
+          "oven": {
+            "doneness": [
+              {
+                "label": "Tierno",
+                "description": "Blando por completo, bordes ligeramente caramelizados"
+              },
+              {
+                "label": "Caramelizado",
+                "description": "Muy dorado, interior dulce y meloso"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Tierno",
+                "description": "Centro blando, piel ligeramente crujiente"
+              },
+              {
+                "label": "Caramelizado",
+                "description": "Piel crujiente, interior profundamente dulce"
+              }
+            ]
+          }
+        }
+      },
+      "eggplant": {
+        "name": "Berenjena",
+        "description": "Verdura sedosa y carnosa que absorbe el sabor de maravilla",
+        "tips": [
+          {
+            "title": "Salar primero",
+            "description": "Sala las rodajas y reposa 20 min para eliminar amargor y humedad"
+          },
+          {
+            "title": "Usar suficiente aceite",
+            "description": "La berenjena absorbe el aceite rápido — no escatimes o se secará"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Dorada",
+                "description": "Cara de corte dorada, centro ligeramente firme"
+              },
+              {
+                "label": "Sedosa",
+                "description": "Muy dorada, completamente blanda y cremosa por dentro"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Tostada",
+                "description": "Marcas de parrilla, sabor ahumado, carne tierna"
+              },
+              {
+                "label": "Muy tostada",
+                "description": "Piel muy tostada, interior meloso — pelar antes de servir"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Asada",
+                "description": "Dorada y tierna por completo"
+              },
+              {
+                "label": "Caramelizada",
+                "description": "Color intenso, sabor dulce-ahumado concentrado"
+              }
+            ]
+          }
+        }
+      },
+      "bell-peppers": {
+        "name": "Pimientos",
+        "description": "Pimientos dulces y crujientes que se caramelizan en algo mágico",
+        "tips": [
+          {
+            "title": "Quitar las semillas",
+            "description": "Limpia semillas y venas blancas para mejor sabor"
+          },
+          {
+            "title": "Tostar para profundidad",
+            "description": "La piel ennegrecida añade un maravilloso dulzor ahumado"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Color brillante y vivo, ligeramente crujiente"
+              },
+              {
+                "label": "Caramelizado",
+                "description": "Blando y dulce, bordes dorado-naranja"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Tostado",
+                "description": "Piel tostada, carne dulce y ahumada"
+              },
+              {
+                "label": "Muy tostado",
+                "description": "Piel muy ennegrecida, interior sedoso — listo para pelar"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Asado",
+                "description": "Blando y dulce, ligeramente dorado"
+              },
+              {
+                "label": "Muy asado",
+                "description": "Sabor concentrado, muy blando"
+              }
+            ]
+          }
+        }
+      },
+      "spinach": {
+        "name": "Espinacas",
+        "description": "Hojas de espinaca tiernas que se marchitan en segundos",
+        "tips": [
+          {
+            "title": "Fuego alto y rápido",
+            "description": "Cocina a fuego alto y sirve inmediatamente"
+          },
+          {
+            "title": "Ajo primero",
+            "description": "Saltea el ajo 30 segundos antes de añadir las espinacas"
+          }
+        ],
+        "methods": {
+          "pan": {
+            "doneness": [
+              {
+                "label": "Marchitas",
+                "description": "Recién marchitas, verde brillante, todavía tiernas"
+              },
+              {
+                "label": "Completamente cocinadas",
+                "description": "Muy marchitas, sabor concentrado"
+              }
+            ]
+          }
+        }
+      },
+      "green-beans": {
+        "name": "Judías verdes",
+        "description": "Judías verdes crujientes y vibrantes — simples y versátiles",
+        "tips": [
+          {
+            "title": "Quitar las puntas",
+            "description": "Corta o quiebra el extremo del tallo antes de cocinar"
+          },
+          {
+            "title": "Baño de hielo",
+            "description": "Sumérgelas en agua con hielo tras hervir para conservar color y crujiente"
+          }
+        ],
+        "methods": {
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Crujiente-tiernas",
+                "description": "Verde brillante, firmeza con crujido — escurrir y baño de hielo"
+              },
+              {
+                "label": "Tiernas",
+                "description": "Completamente cocinadas, mordida más blanda"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Crujiente-tiernas",
+                "description": "Vibrantes y firmes"
+              },
+              {
+                "label": "Tiernas",
+                "description": "Completamente blandas, sin crujido"
+              }
+            ]
+          },
+          "pan": {
+            "doneness": [
+              {
+                "label": "Soasadas",
+                "description": "Ligeramente tostadas, crujiente-tiernas con gran sabor"
+              },
+              {
+                "label": "Caramelizadas",
+                "description": "Color intenso, dulces y tostadas"
+              }
+            ]
+          }
+        }
+      },
+      "lentils": {
+        "name": "Lentejas",
+        "description": "Lentejas ricas en proteínas — contundentes, terrosas e infinitamente versátiles",
+        "tips": [
+          {
+            "title": "Sin remojo previo",
+            "description": "Las lentejas rojas se cocinan rápido sin remojar — las verdes/marrones se benefician de 30 min"
+          },
+          {
+            "title": "Salar al final",
+            "description": "Añadir sal demasiado pronto endurece las pieles"
+          }
+        ],
+        "methods": {
+          "stovetop": {
+            "doneness": [
+              {
+                "label": "Al dente",
+                "description": "Tiernas pero enteras — ideales para ensaladas"
+              },
+              {
+                "label": "Blandas",
+                "description": "Completamente blandas, ideales para sopas y dals"
+              }
+            ]
+          }
+        }
+      },
+      "couscous": {
+        "name": "Cuscús",
+        "description": "Ligero y esponjoso cereal norteafricano listo en minutos",
+        "tips": [
+          {
+            "title": "Proporción con agua",
+            "description": "Usa 1:1.5 cuscús a agua hirviendo para resultados esponjosos"
+          },
+          {
+            "title": "Esponjar con tenedor",
+            "description": "Esponja con tenedor tras reposar — nunca remover o se apelmazará"
+          }
+        ],
+        "methods": {
+          "stovetop": {
+            "doneness": [
+              {
+                "label": "Esponjoso",
+                "description": "Vierte agua hirviendo, tapa, reposa 5 min — listo"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
