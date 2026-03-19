@@ -506,9 +506,9 @@
 
       .multi-screenshot {
         width: 100%;
-        max-width: 280px;
-        border-radius: 36px;
-        box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        border-radius: 20px;
+        box-shadow: 0 24px 48px rgba(0,0,0,0.5);
+        display: block;
       }
 
       /* ===== Ingredients list ===== */
@@ -630,8 +630,7 @@
         .section { padding: 60px 20px; }
         .how-it-works { padding: 40px 24px; }
         .steps { grid-template-columns: 1fr; gap: 12px; }
-        .multi-section { grid-template-columns: 1fr; padding: 60px 20px; gap: 40px; }
-        .multi-visual { display: none; }
+        .multi-section { grid-template-columns: 1fr; padding: 60px 20px; gap: 32px; }
         .ingredients-section { padding: 60px 20px; }
         .cta-section { padding: 60px 20px; }
         footer { padding: 32px 20px; flex-direction: column; align-items: flex-start; }
@@ -832,8 +831,7 @@
         </div>
       </div>
       <div class="multi-visual">
-        <img src="images/screenshots/multi.png" alt="Multi-ingredient cooking feature" class="multi-screenshot"
-             onerror="this.style.display='none';" />
+        <img src="images/multi-cooking-feature.png" alt="Multi-ingredient cooking feature" class="multi-screenshot" />
       </div>
     </div>
 
