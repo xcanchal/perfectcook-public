@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support — Perfect Cook</title>
+    <meta name="description" content="Get help with Perfect Cook — the precision cooking timer app for iOS." />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="apple-touch-icon" href="images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --bg:           #0f0e0b;
+        --surface:      #1b1a14;
+        --surface-high: #21201a;
+        --surface-highest: #27261f;
+        --primary:      #ff8c51;
+        --on-primary:   #501c00;
+        --text:         #eae5da;
+        --text-muted:   #afaba1;
+        --outline:      #4a4840;
+        --green:        #7fb074;
+        --green-bg:     #002d02;
+        --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --radius-sm: 12px;
+        --radius-md: 20px;
+      }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: var(--primary); text-decoration: none; }
+      a:hover { opacity: 0.8; }
+
+      nav {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 40px;
+        background: rgba(15, 14, 11, 0.85);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(74, 72, 64, 0.4);
+      }
+
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+      }
+
+      .nav-logo img {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+      }
+
+      .nav-logo-text {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .nav-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--text-muted);
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.15s;
+      }
+
+      .nav-back:hover { color: var(--text); opacity: 1; }
+
+      .page {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 120px 40px 80px;
+      }
+
+      .page-label {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: var(--primary);
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .page-title {
+        font-size: clamp(28px, 4vw, 42px);
+        font-weight: 800;
+        line-height: 1.15;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+
+      .page-subtitle {
+        font-size: 18px;
+        color: var(--text-muted);
+        margin-bottom: 56px;
+        line-height: 1.5;
+      }
+
+      /* Contact card */
+      .contact-card {
+        background: var(--surface);
+        border: 1px solid rgba(74, 72, 64, 0.6);
+        border-radius: var(--radius-md);
+        padding: 32px;
+        margin-bottom: 48px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .contact-icon {
+        font-size: 36px;
+        flex-shrink: 0;
+      }
+
+      .contact-body h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 6px;
+      }
+
+      .contact-body p {
+        font-size: 15px;
+        color: var(--text-muted);
+        margin-bottom: 16px;
+      }
+
+      .contact-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--primary);
+        color: var(--on-primary);
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 100px;
+        text-decoration: none;
+        transition: opacity 0.15s;
+      }
+
+      .contact-btn:hover { opacity: 0.9; }
+
+      /* FAQ */
+      .faq-label {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: var(--primary);
+        text-transform: uppercase;
+        margin-bottom: 24px;
+      }
+
+      .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .faq-item {
+        background: var(--surface);
+        border: 1px solid rgba(74, 72, 64, 0.4);
+        border-radius: var(--radius-sm);
+        overflow: hidden;
+      }
+
+      .faq-question {
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 20px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        cursor: pointer;
+        text-align: left;
+        color: var(--text);
+        font-family: var(--font);
+        font-size: 16px;
+        font-weight: 600;
+        transition: background 0.15s;
+      }
+
+      .faq-question:hover { background: var(--surface-high); }
+
+      .faq-chevron {
+        font-size: 18px;
+        color: var(--primary);
+        flex-shrink: 0;
+        transition: transform 0.2s;
+        display: inline-block;
+      }
+
+      .faq-item.open .faq-chevron {
+        transform: rotate(180deg);
+      }
+
+      .faq-answer {
+        display: none;
+        padding: 0 24px 20px;
+        font-size: 15px;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      .faq-item.open .faq-answer {
+        display: block;
+      }
+
+      .faq-answer a {
+        color: var(--primary);
+      }
+
+      /* Refund section */
+      .refund-box {
+        margin-top: 48px;
+        background: var(--surface);
+        border: 1px solid rgba(74, 72, 64, 0.6);
+        border-radius: var(--radius-md);
+        padding: 28px 32px;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+      }
+
+      .refund-icon {
+        font-size: 28px;
+        flex-shrink: 0;
+      }
+
+      .refund-body h3 {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+
+      .refund-body p {
+        font-size: 15px;
+        color: var(--text-muted);
+        margin-bottom: 12px;
+      }
+
+      .refund-body p:last-child { margin-bottom: 0; }
+
+      footer {
+        border-top: 1px solid rgba(74, 72, 64, 0.4);
+        padding: 40px;
+        text-align: center;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+      }
+
+      .footer-links a {
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      .footer-links a:hover { color: var(--text); opacity: 1; }
+
+      .footer-copy {
+        font-size: 13px;
+        color: var(--text-muted);
+        opacity: 0.6;
+      }
+
+      @media (max-width: 600px) {
+        nav { padding: 14px 20px; }
+        .page { padding: 100px 20px 60px; }
+        .contact-card { flex-direction: column; gap: 16px; }
+        footer { padding: 32px 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav-logo">
+        <img src="images/icon.png" alt="Perfect Cook icon" />
+        <span class="nav-logo-text">Perfect Cook</span>
+      </a>
+      <a href="index.html" class="nav-back">
+        ← Back to home
+      </a>
+    </nav>
+
+    <div class="page">
+      <p class="page-label">Support</p>
+      <h1 class="page-title">We're here to help.</h1>
+      <p class="page-subtitle">Got a question or ran into an issue? Reach out and we'll get back to you as soon as possible — usually within 24 hours.</p>
+
+      <div class="contact-card">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-body">
+          <h2>Email Support</h2>
+          <p>Send us a message with your question, feedback, or bug report and we'll respond personally.</p>
+          <a href="mailto:support@perfectcook.app" class="contact-btn">
+            Contact Support
+          </a>
+        </div>
+      </div>
+
+      <p class="faq-label">Frequently Asked Questions</p>
+
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            The app shows a loading screen and never loads. What do I do?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            Perfect Cook fetches ingredient and cooking data from the internet on first launch. Make sure your device has an active internet connection, then force-quit the app and reopen it. Once the data is downloaded, the app works offline.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            My settings keep resetting. How do I fix this?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            Settings are saved locally on your device. If they reset, it may be due to a low storage condition or a recent reinstall. Check that your device has sufficient free storage. If the problem persists, please <a href="mailto:support@perfectcook.app">contact us</a> and we'll investigate.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can I use Perfect Cook without an internet connection?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            Yes — after the first launch. Perfect Cook downloads ingredient and cooking data on its first run and caches it locally. After that, the app works fully offline. An internet connection is only needed to pick up data updates in the background.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            The cooking times seem off for my equipment. Is that normal?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            Cooking times are general guidelines based on standard equipment at medium-calibrated temperatures. Results vary depending on your stove, oven, grill, or air fryer model, as well as the size and thickness of your ingredient. Use the times as a starting point and adjust based on your setup. Always verify doneness with a thermometer for proteins.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can I suggest a new ingredient or cooking method?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            Absolutely! We'd love to hear your suggestions. Send us a message at <a href="mailto:support@perfectcook.app">support@perfectcook.app</a> with the ingredient and method you'd like to see, and we'll consider it for a future update.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Is there a subscription or any recurring charges?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            No. Perfect Cook is a one-time purchase of $4.99. There are no subscriptions, no in-app purchases beyond the initial unlock, no ads, and no recurring fees — ever.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Does the app collect any of my personal data?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            No. Perfect Cook does not collect, store, or share any personal information. No accounts, no analytics, no tracking. See our <a href="privacy.html">Privacy Policy</a> for full details.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            The app crashes or behaves unexpectedly. What should I do?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            First, try force-quitting and reopening the app. If the issue persists, try deleting and reinstalling (your purchase is tied to your Apple ID and can be restored for free). If you're still experiencing problems, please email us at <a href="mailto:support@perfectcook.app">support@perfectcook.app</a> with a description of the issue and your device model and iOS version.
+          </div>
+        </div>
+      </div>
+
+      <div class="refund-box">
+        <div class="refund-icon">💳</div>
+        <div class="refund-body">
+          <h3>Refunds</h3>
+          <p>All purchases are processed by Apple through the App Store. To request a refund, please visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> and follow Apple's refund process.</p>
+          <p>If you have a specific issue with the app that led to your refund request, please also reach out to us — we may be able to resolve it.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p class="footer-copy">© 2025 Xavier Canchal. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleFaq(btn) {
+        const item = btn.closest('.faq-item');
+        item.classList.toggle('open');
+      }
+    </script>
+  </body>
+</html>

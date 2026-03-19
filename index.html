@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Cook — Cook Every Ingredient Perfectly</title>
+    <meta name="description" content="Perfect Cook is the precision cooking timer that tells you exactly how long to cook any ingredient, at any doneness, with any method. Never overcook again." />
+    <meta name="keywords" content="cooking timer, kitchen timer, doneness guide, cook steak, cook chicken, cooking app, iOS cooking app, perfect cook" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Perfect Cook — Cook Every Ingredient Perfectly" />
+    <meta property="og:description" content="Precision cooking timers with doneness guidance for 36 ingredients. Cook everything perfectly, every time." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xcanchal.github.io/perfectcook-public/" />
+    <meta property="og:image" content="https://xcanchal.github.io/perfectcook-public/images/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Perfect Cook — Cook Every Ingredient Perfectly" />
+    <meta name="twitter:description" content="Precision cooking timers with doneness guidance for 36 ingredients." />
+    <meta name="twitter:image" content="https://xcanchal.github.io/perfectcook-public/images/og-image.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="apple-touch-icon" href="images/icon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Perfect Cook",
+        "operatingSystem": "iOS",
+        "applicationCategory": "FoodApplication",
+        "description": "Precision cooking timers with doneness guidance for 36 ingredients. Cook everything perfectly, every time.",
+        "offers": { "@type": "Offer", "price": "4.99", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Xavier Canchal" }
+      }
+    </script>
+
+    <style>
+      /* ===== Reset & Base ===== */
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --bg:           #0f0e0b;
+        --surface:      #1b1a14;
+        --surface-high: #21201a;
+        --surface-highest: #27261f;
+        --primary:      #ff8c51;
+        --primary-dark: #e67a40;
+        --on-primary:   #501c00;
+        --text:         #eae5da;
+        --text-muted:   #afaba1;
+        --outline:      #4a4840;
+        --green:        #7fb074;
+        --green-bg:     #002d02;
+        --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --radius-sm: 12px;
+        --radius-md: 20px;
+        --radius-lg: 32px;
+      }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: var(--primary); text-decoration: none; }
+      a:hover { opacity: 0.8; }
+
+      /* ===== Nav ===== */
+      nav {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 40px;
+        background: rgba(15, 14, 11, 0.85);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(74, 72, 64, 0.4);
+      }
+
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+      }
+
+      .nav-logo img {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+      }
+
+      .nav-logo-text {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .nav-cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--primary);
+        color: var(--on-primary);
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: 100px;
+        text-decoration: none;
+        transition: opacity 0.15s;
+      }
+
+      .nav-cta:hover { opacity: 0.9; }
+
+      .nav-cta svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+      /* ===== Layout ===== */
+      .section {
+        padding: 100px 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .section-label {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: var(--primary);
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      /* ===== Hero ===== */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 140px 40px 80px;
+        max-width: 1100px;
+        margin: 0 auto;
+        gap: 60px;
+      }
+
+      .hero-content { flex: 1; }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--green-bg);
+        color: var(--green);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 6px 14px;
+        border-radius: 100px;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+      }
+
+      .hero-title {
+        font-size: clamp(42px, 6vw, 72px);
+        font-weight: 900;
+        line-height: 1.05;
+        letter-spacing: -1.5px;
+        margin-bottom: 24px;
+      }
+
+      .hero-title span { color: var(--primary); }
+
+      .hero-subtitle {
+        font-size: 18px;
+        color: var(--text-muted);
+        line-height: 1.7;
+        margin-bottom: 40px;
+        max-width: 480px;
+      }
+
+      .hero-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--primary);
+        color: var(--on-primary);
+        font-size: 16px;
+        font-weight: 700;
+        padding: 18px 32px;
+        border-radius: 100px;
+        text-decoration: none;
+        transition: transform 0.15s, opacity 0.15s;
+      }
+
+      .btn-primary:hover { transform: translateY(-1px); opacity: 0.92; }
+
+      .btn-primary svg { width: 20px; height: 20px; }
+
+      .hero-price {
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      .hero-price strong { color: var(--text); }
+
+      .hero-visual {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      .hero-phone-wrap {
+        position: relative;
+        width: 300px;
+      }
+
+      .hero-glow {
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        background: var(--primary);
+        opacity: 0.12;
+        filter: blur(60px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
+
+      .hero-screenshot {
+        width: 100%;
+        border-radius: 40px;
+        box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,140,81,0.15);
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero-icon-fallback {
+        width: 200px;
+        height: 200px;
+        border-radius: 44px;
+        box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,140,81,0.2);
+        position: relative;
+        z-index: 1;
+      }
+
+      /* ===== Ingredients strip ===== */
+      .ingredients-strip {
+        border-top: 1px solid var(--outline);
+        border-bottom: 1px solid var(--outline);
+        padding: 24px 0;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .ingredients-strip::before,
+      .ingredients-strip::after {
+        content: '';
+        position: absolute;
+        top: 0; bottom: 0;
+        width: 120px;
+        z-index: 2;
+      }
+
+      .ingredients-strip::before {
+        left: 0;
+        background: linear-gradient(to right, var(--bg), transparent);
+      }
+
+      .ingredients-strip::after {
+        right: 0;
+        background: linear-gradient(to left, var(--bg), transparent);
+      }
+
+      .ingredients-track {
+        display: flex;
+        gap: 12px;
+        animation: scroll-left 30s linear infinite;
+        width: max-content;
+      }
+
+      @keyframes scroll-left {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+
+      .ingredient-pill {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--surface);
+        border: 1px solid var(--outline);
+        border-radius: 100px;
+        padding: 8px 16px;
+        white-space: nowrap;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-muted);
+      }
+
+      .ingredient-pill span:first-child { font-size: 20px; }
+
+      /* ===== Features ===== */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+        margin-top: 48px;
+      }
+
+      .feature-card {
+        background: var(--surface);
+        border-radius: var(--radius-md);
+        padding: 28px;
+        border: 1px solid var(--outline);
+        transition: border-color 0.2s;
+      }
+
+      .feature-card:hover { border-color: var(--primary); }
+
+      .feature-icon {
+        font-size: 36px;
+        margin-bottom: 16px;
+        display: block;
+      }
+
+      .feature-title {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+
+      .feature-desc {
+        font-size: 14px;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      /* ===== How it works ===== */
+      .how-it-works {
+        background: var(--surface);
+        border-radius: var(--radius-lg);
+        padding: 64px;
+        margin-top: 80px;
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin-top: 48px;
+      }
+
+      .step { text-align: center; }
+
+      .step-number {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--primary);
+        color: var(--on-primary);
+        font-size: 20px;
+        font-weight: 800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+      }
+
+      .step-emoji {
+        font-size: 48px;
+        display: block;
+        margin-bottom: 16px;
+      }
+
+      .step-title {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+
+      .step-desc {
+        font-size: 14px;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      /* ===== Multi cooking ===== */
+      .multi-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+        padding: 100px 40px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .multi-content .section-label { display: block; margin-bottom: 12px; }
+
+      .multi-title {
+        font-size: clamp(32px, 4vw, 48px);
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -1px;
+        margin-bottom: 20px;
+      }
+
+      .multi-title span { color: var(--primary); }
+
+      .multi-desc {
+        font-size: 16px;
+        color: var(--text-muted);
+        line-height: 1.7;
+        margin-bottom: 32px;
+      }
+
+      .multi-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .tag {
+        background: var(--surface-high);
+        border: 1px solid var(--outline);
+        border-radius: 100px;
+        padding: 6px 14px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text-muted);
+      }
+
+      .multi-visual {
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+
+      .multi-screenshot {
+        width: 100%;
+        max-width: 280px;
+        border-radius: 36px;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+      }
+
+      /* ===== Ingredients list ===== */
+      .ingredients-section { padding: 100px 40px; max-width: 1100px; margin: 0 auto; }
+
+      .ingredients-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 12px;
+        margin-top: 48px;
+      }
+
+      .ingredient-card {
+        background: var(--surface);
+        border: 1px solid var(--outline);
+        border-radius: var(--radius-sm);
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--text-muted);
+        transition: border-color 0.2s, color 0.2s;
+      }
+
+      .ingredient-card:hover { border-color: var(--primary); color: var(--text); }
+      .ingredient-card-emoji { font-size: 24px; }
+
+      /* ===== CTA ===== */
+      .cta-section {
+        padding: 100px 40px;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .cta-title {
+        font-size: clamp(36px, 5vw, 56px);
+        font-weight: 900;
+        letter-spacing: -1.5px;
+        line-height: 1.05;
+        margin-bottom: 20px;
+      }
+
+      .cta-title span { color: var(--primary); }
+
+      .cta-desc {
+        font-size: 18px;
+        color: var(--text-muted);
+        margin-bottom: 40px;
+        line-height: 1.6;
+      }
+
+      .cta-meta {
+        margin-top: 16px;
+        font-size: 13px;
+        color: var(--text-muted);
+      }
+
+      /* ===== Footer ===== */
+      footer {
+        border-top: 1px solid var(--outline);
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+
+      .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+      }
+
+      .footer-logo img { width: 28px; height: 28px; border-radius: 6px; }
+
+      .footer-logo-text {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+      }
+
+      .footer-links a {
+        font-size: 14px;
+        color: var(--text-muted);
+        text-decoration: none;
+        transition: color 0.15s;
+      }
+
+      .footer-links a:hover { color: var(--text); }
+
+      .footer-copy {
+        font-size: 13px;
+        color: var(--text-muted);
+        width: 100%;
+        margin-top: 8px;
+      }
+
+      /* ===== Responsive ===== */
+      @media (max-width: 768px) {
+        nav { padding: 14px 20px; }
+        .hero { flex-direction: column; padding: 120px 20px 60px; gap: 48px; text-align: center; }
+        .hero-subtitle { margin: 0 auto 40px; }
+        .hero-actions { justify-content: center; }
+        .hero-visual { width: 100%; }
+        .hero-phone-wrap { width: 220px; }
+        .section { padding: 60px 20px; }
+        .how-it-works { padding: 40px 24px; }
+        .steps { grid-template-columns: 1fr; gap: 32px; }
+        .multi-section { grid-template-columns: 1fr; padding: 60px 20px; gap: 40px; }
+        .multi-visual { display: none; }
+        .ingredients-section { padding: 60px 20px; }
+        .cta-section { padding: 60px 20px; }
+        footer { padding: 32px 20px; flex-direction: column; align-items: flex-start; }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Nav -->
+    <nav>
+      <a href="/" class="nav-logo">
+        <img src="images/icon.png" alt="Perfect Cook icon" />
+        <span class="nav-logo-text">Perfect Cook</span>
+      </a>
+      <a href="https://apps.apple.com/app/id0000000000" class="nav-cta" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download
+      </a>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>🍳</span> iOS App
+        </div>
+        <h1 class="hero-title">
+          Cook every ingredient<br /><span>perfectly.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Precision cooking timers with doneness guidance for 36 ingredients.
+          Pick your method, pick your doneness — Perfect Cook does the rest.
+        </p>
+        <div class="hero-actions">
+          <a href="https://apps.apple.com/app/id0000000000" class="btn-primary" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            Download on the App Store
+          </a>
+          <span class="hero-price"><strong>$4.99</strong> · One-time purchase</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-phone-wrap">
+          <div class="hero-glow"></div>
+          <img src="images/screenshots/home.png" alt="Perfect Cook app screenshot" class="hero-screenshot"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+          <img src="images/icon.png" alt="Perfect Cook" class="hero-icon-fallback" style="display:none;" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Ingredient strip -->
+    <div class="ingredients-strip">
+      <div class="ingredients-track">
+        <!-- duplicated for seamless loop -->
+        <div class="ingredient-pill"><span>🥚</span> Eggs</div>
+        <div class="ingredient-pill"><span>🥩</span> Steak</div>
+        <div class="ingredient-pill"><span>🐟</span> Salmon</div>
+        <div class="ingredient-pill"><span>🍗</span> Chicken Breast</div>
+        <div class="ingredient-pill"><span>🍤</span> Shrimp</div>
+        <div class="ingredient-pill"><span>🥦</span> Asparagus</div>
+        <div class="ingredient-pill"><span>🍝</span> Pasta</div>
+        <div class="ingredient-pill"><span>🍚</span> Rice</div>
+        <div class="ingredient-pill"><span>🐷</span> Pork Chops</div>
+        <div class="ingredient-pill"><span>🐟</span> Tuna Steak</div>
+        <div class="ingredient-pill"><span>🦑</span> Calamari</div>
+        <div class="ingredient-pill"><span>🥔</span> Sweet Potato</div>
+        <div class="ingredient-pill"><span>🥗</span> Spinach</div>
+        <div class="ingredient-pill"><span>🫘</span> Lentils</div>
+        <div class="ingredient-pill"><span>🐑</span> Lamb Chops</div>
+        <div class="ingredient-pill"><span>🫐</span> Couscous</div>
+        <div class="ingredient-pill"><span>🥚</span> Eggs</div>
+        <div class="ingredient-pill"><span>🥩</span> Steak</div>
+        <div class="ingredient-pill"><span>🐟</span> Salmon</div>
+        <div class="ingredient-pill"><span>🍗</span> Chicken Breast</div>
+        <div class="ingredient-pill"><span>🍤</span> Shrimp</div>
+        <div class="ingredient-pill"><span>🥦</span> Asparagus</div>
+        <div class="ingredient-pill"><span>🍝</span> Pasta</div>
+        <div class="ingredient-pill"><span>🍚</span> Rice</div>
+        <div class="ingredient-pill"><span>🐷</span> Pork Chops</div>
+        <div class="ingredient-pill"><span>🐟</span> Tuna Steak</div>
+        <div class="ingredient-pill"><span>🦑</span> Calamari</div>
+        <div class="ingredient-pill"><span>🥔</span> Sweet Potato</div>
+        <div class="ingredient-pill"><span>🥗</span> Spinach</div>
+        <div class="ingredient-pill"><span>🫘</span> Lentils</div>
+        <div class="ingredient-pill"><span>🐑</span> Lamb Chops</div>
+        <div class="ingredient-pill"><span>🫐</span> Couscous</div>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div class="section">
+      <p class="section-label">Why Perfect Cook</p>
+      <h2 style="font-size: clamp(28px, 4vw, 42px); font-weight: 800; letter-spacing: -1px; max-width: 560px; line-height: 1.1;">
+        Stop guessing. Start cooking with precision.
+      </h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <span class="feature-icon">🎯</span>
+          <div class="feature-title">Exact timing, every time</div>
+          <p class="feature-desc">Cooking times tuned for each ingredient, method, and doneness level. No more guesswork.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🌡️</span>
+          <div class="feature-title">Doneness guidance</div>
+          <p class="feature-desc">From rare to well-done, soft-boiled to hard — pick your doneness and get the exact time and temperature.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🍳</span>
+          <div class="feature-title">Any cooking method</div>
+          <p class="feature-desc">Pan, oven, grill, steam, air fryer, boiling — each method has its own optimised timing.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🔢</span>
+          <div class="feature-title">Multi-ingredient cooking</div>
+          <p class="feature-desc">Cook up to 6 ingredients at once with synced timers. Everything lands on the plate at the right moment.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">❤️</span>
+          <div class="feature-title">Your favourites</div>
+          <p class="feature-desc">Save your go-to ingredients for instant access. Your kitchen, your routine.</p>
+        </div>
+        <div class="feature-card">
+          <span class="feature-icon">🌍</span>
+          <div class="feature-title">English & Spanish</div>
+          <p class="feature-desc">Full localisation in both languages, including ingredient names, descriptions, and cooking tips.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="section" style="padding-top: 0;">
+      <div class="how-it-works">
+        <p class="section-label" style="text-align: center;">How it works</p>
+        <h2 style="font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -1px; text-align: center; line-height: 1.1;">
+          Three taps to a perfect cook
+        </h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-emoji">🔍</span>
+            <div class="step-number">1</div>
+            <div class="step-title">Pick an ingredient</div>
+            <p class="step-desc">Browse or search 36 ingredients across eggs, meat, fish, greens, grains, and pantry staples.</p>
+          </div>
+          <div class="step">
+            <span class="step-emoji">⚙️</span>
+            <div class="step-number">2</div>
+            <div class="step-title">Choose method & doneness</div>
+            <p class="step-desc">Select how you're cooking it and how you like it. The app shows you the recommended heat and time.</p>
+          </div>
+          <div class="step">
+            <span class="step-emoji">✅</span>
+            <div class="step-number">3</div>
+            <div class="step-title">Cook perfectly</div>
+            <p class="step-desc">The timer runs, alerts you when done, and you serve a perfectly cooked dish every single time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Multi cooking feature -->
+    <div class="multi-section">
+      <div class="multi-content">
+        <span class="section-label">Multi-ingredient cooking</span>
+        <h2 class="multi-title">Cook everything at <span>the same time.</span></h2>
+        <p class="multi-desc">
+          Add up to 6 ingredients with different cook times. Perfect Cook staggers the timers so everything finishes together — steak, vegetables, and rice all perfectly done at once.
+        </p>
+        <div class="multi-tags">
+          <span class="tag">Up to 6 ingredients</span>
+          <span class="tag">Synced timers</span>
+          <span class="tag">Pause & adjust</span>
+          <span class="tag">Individual doneness</span>
+        </div>
+      </div>
+      <div class="multi-visual">
+        <img src="images/screenshots/multi.png" alt="Multi-ingredient cooking feature" class="multi-screenshot"
+             onerror="this.style.display='none';" />
+      </div>
+    </div>
+
+    <!-- Ingredients list -->
+    <div class="ingredients-section">
+      <p class="section-label">36 Ingredients</p>
+      <h2 style="font-size: clamp(28px, 4vw, 42px); font-weight: 800; letter-spacing: -1px; line-height: 1.1; max-width: 480px;">
+        Everything you cook, covered.
+      </h2>
+      <div class="ingredients-grid">
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🥚</span> Eggs</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🥩</span> Steak</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🐟</span> Salmon</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🍝</span> Pasta</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🍗</span> Chicken Breast</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🥦</span> Asparagus</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🍚</span> Rice</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🍤</span> Shrimp</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🐷</span> Pork Chops</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🥑</span> Tuna Steak</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🦑</span> Calamari</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🐟</span> Cod</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🦪</span> Mussels</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🦐</span> Scallops</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🐑</span> Lamb Chops</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🦆</span> Duck Breast</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🥓</span> Bacon</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🌭</span> Sausages</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🥔</span> Sweet Potato</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🍆</span> Eggplant</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🫑</span> Bell Peppers</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🥗</span> Spinach</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🫘</span> Green Beans</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🌿</span> Lentils</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🫐</span> Couscous</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🥦</span> Broccoli</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🍄</span> Mushrooms</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🧅</span> Onion</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🥕</span> Carrots</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🫛</span> Quinoa</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🍞</span> Oats</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🌽</span> Corn</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🫙</span> Chickpeas</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🐄</span> Burger</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🍖</span> Ribs</div>
+        <div class="ingredient-card"><span class="ingredient-card-emoji">🍠</span> Potato</div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <p class="section-label">Get Perfect Cook</p>
+      <h2 class="cta-title">Never overcook<br /><span>again.</span></h2>
+      <p class="cta-desc">One purchase. Every ingredient. Perfect results.</p>
+      <a href="https://apps.apple.com/app/id0000000000" class="btn-primary" target="_blank" rel="noopener" style="margin: 0 auto; display: inline-flex;">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:20px;height:20px;"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on the App Store — $4.99
+      </a>
+      <p class="cta-meta">iOS only · One-time purchase · No subscription</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <a href="/" class="footer-logo">
+        <img src="images/icon.png" alt="Perfect Cook" />
+        <span class="footer-logo-text">Perfect Cook</span>
+      </a>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p class="footer-copy">© 2026 Xavier Canchal. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>

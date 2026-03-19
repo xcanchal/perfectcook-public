@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Use — Perfect Cook</title>
+    <meta name="description" content="Terms of Use for Perfect Cook — the precision cooking timer app for iOS." />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="apple-touch-icon" href="images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --bg:           #0f0e0b;
+        --surface:      #1b1a14;
+        --surface-high: #21201a;
+        --primary:      #ff8c51;
+        --on-primary:   #501c00;
+        --text:         #eae5da;
+        --text-muted:   #afaba1;
+        --outline:      #4a4840;
+        --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --radius-sm: 12px;
+        --radius-md: 20px;
+      }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        font-family: var(--font);
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a { color: var(--primary); text-decoration: none; }
+      a:hover { opacity: 0.8; }
+
+      nav {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 40px;
+        background: rgba(15, 14, 11, 0.85);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(74, 72, 64, 0.4);
+      }
+
+      .nav-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+      }
+
+      .nav-logo img {
+        width: 34px;
+        height: 34px;
+        border-radius: 8px;
+      }
+
+      .nav-logo-text {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--text);
+      }
+
+      .nav-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--text-muted);
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        transition: color 0.15s;
+      }
+
+      .nav-back:hover { color: var(--text); opacity: 1; }
+
+      .page {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 120px 40px 80px;
+      }
+
+      .page-label {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: var(--primary);
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .page-title {
+        font-size: clamp(28px, 4vw, 42px);
+        font-weight: 800;
+        line-height: 1.15;
+        color: var(--text);
+        margin-bottom: 8px;
+      }
+
+      .page-date {
+        font-size: 14px;
+        color: var(--text-muted);
+        margin-bottom: 48px;
+      }
+
+      .content h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--text);
+        margin-top: 40px;
+        margin-bottom: 12px;
+      }
+
+      .content h2:first-child { margin-top: 0; }
+
+      .content p {
+        font-size: 16px;
+        color: var(--text-muted);
+        margin-bottom: 16px;
+      }
+
+      .content p strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .content ul {
+        list-style: none;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .content ul li {
+        font-size: 16px;
+        color: var(--text-muted);
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .content ul li::before {
+        content: "—";
+        position: absolute;
+        left: 0;
+        color: var(--primary);
+        font-weight: 700;
+      }
+
+      .highlight-box {
+        background: var(--surface);
+        border: 1px solid rgba(74, 72, 64, 0.6);
+        border-radius: var(--radius-md);
+        padding: 24px 28px;
+        margin: 32px 0;
+      }
+
+      .highlight-box p {
+        margin-bottom: 0;
+        font-size: 16px;
+        color: var(--text);
+      }
+
+      footer {
+        border-top: 1px solid rgba(74, 72, 64, 0.4);
+        padding: 40px;
+        text-align: center;
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+      }
+
+      .footer-links a {
+        font-size: 14px;
+        color: var(--text-muted);
+      }
+
+      .footer-links a:hover { color: var(--text); opacity: 1; }
+
+      .footer-copy {
+        font-size: 13px;
+        color: var(--text-muted);
+        opacity: 0.6;
+      }
+
+      @media (max-width: 600px) {
+        nav { padding: 14px 20px; }
+        .page { padding: 100px 20px 60px; }
+        footer { padding: 32px 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="nav-logo">
+        <img src="images/icon.png" alt="Perfect Cook icon" />
+        <span class="nav-logo-text">Perfect Cook</span>
+      </a>
+      <a href="index.html" class="nav-back">
+        ← Back to home
+      </a>
+    </nav>
+
+    <div class="page">
+      <p class="page-label">Legal</p>
+      <h1 class="page-title">Terms of Use</h1>
+      <p class="page-date">Last updated: March 2025</p>
+
+      <div class="highlight-box">
+        <p>By downloading or using Perfect Cook, you agree to these Terms of Use. Please read them — they're short and written in plain language.</p>
+      </div>
+
+      <div class="content">
+        <h2>1. Acceptance of Terms</h2>
+        <p>These Terms of Use ("Terms") govern your use of the Perfect Cook mobile application ("App") available on Apple's App Store. By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.</p>
+
+        <h2>2. License</h2>
+        <p>We grant you a personal, non-exclusive, non-transferable, limited license to install and use the App on Apple devices that you own or control, for personal, non-commercial purposes, subject to these Terms and Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Standard End User License Agreement (EULA)</a>.</p>
+        <p>You may not:</p>
+        <ul>
+          <li>Copy, modify, or distribute the App or its content</li>
+          <li>Reverse engineer, decompile, or disassemble the App</li>
+          <li>Use the App for any commercial purpose without our written consent</li>
+          <li>Remove any proprietary notices or labels from the App</li>
+        </ul>
+
+        <h2>3. Purchase & Refunds</h2>
+        <p>Perfect Cook is available as a <strong>one-time purchase</strong> of $4.99 USD through the Apple App Store. There are no subscriptions, no recurring fees, and no hidden costs.</p>
+        <p>All purchases are processed by Apple. Refund requests are subject to Apple's refund policy. To request a refund, visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+        <p>Your purchase grants you access to all features available at the time of purchase and future updates to the App, as long as the App continues to be available on the App Store.</p>
+
+        <h2>4. Cooking Information Disclaimer</h2>
+        <p>The cooking times, temperatures, and doneness guidance provided in the App are <strong>for informational purposes only</strong>. They are based on general cooking guidelines and may not be suitable for every ingredient, equipment, or preference.</p>
+        <ul>
+          <li>Always use a food thermometer to verify safe internal temperatures</li>
+          <li>Follow applicable food safety guidelines in your region</li>
+          <li>Results may vary based on your specific equipment and ingredient sizes</li>
+          <li>The App is not a substitute for proper food handling and safety knowledge</li>
+        </ul>
+        <p>We are not liable for any outcomes resulting from following the cooking guidance in the App.</p>
+
+        <h2>5. Intellectual Property</h2>
+        <p>All content in the App — including but not limited to text, graphics, icons, and cooking data — is owned by or licensed to Xavier Canchal and is protected by applicable intellectual property laws. You may not reproduce, distribute, or create derivative works from any App content without our express written permission.</p>
+
+        <h2>6. Disclaimer of Warranties</h2>
+        <p>The App is provided <strong>"as is"</strong> and <strong>"as available"</strong> without warranties of any kind, express or implied. We do not warrant that the App will be error-free, uninterrupted, or meet your specific requirements.</p>
+
+        <h2>7. Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, Xavier Canchal shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the App, even if advised of the possibility of such damages.</p>
+
+        <h2>8. Internet Requirement</h2>
+        <p>The App requires an internet connection on first launch to download ingredient and cooking data. After the initial download, cached data is available offline. We are not responsible for any issues arising from lack of internet connectivity.</p>
+
+        <h2>9. Updates & Changes</h2>
+        <p>We may update the App and these Terms at any time. Continued use of the App after changes to these Terms constitutes acceptance of the updated Terms. We will update the "Last updated" date at the top of this page when changes are made.</p>
+
+        <h2>10. Governing Law</h2>
+        <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions.</p>
+
+        <h2>11. Contact</h2>
+        <p>For questions about these Terms, please contact us at <a href="mailto:support@perfectcook.app">support@perfectcook.app</a> or visit our <a href="support.html">support page</a>.</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p class="footer-copy">© 2025 Xavier Canchal. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
