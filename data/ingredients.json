@@ -88,6 +88,25 @@
               "description": "Fully cooked through"
             }
           ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 350,
+          "doneness": [
+            {
+              "label": "Soft Baked",
+              "minutes": 12,
+              "description": "Set white, runny yolk — baked in dish with butter"
+            },
+            {
+              "label": "Fully Set",
+              "minutes": 15,
+              "description": "Whites and yolk fully cooked through"
+            }
+          ]
         }
       ]
     },
@@ -277,6 +296,42 @@
               "description": "Fully cooked, crispy skin"
             }
           ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Flaky & Moist",
+              "minutes": 10,
+              "description": "Grill marks, moist center — use a fish basket"
+            },
+            {
+              "label": "Firm",
+              "minutes": 14,
+              "description": "Fully cooked, charred skin"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Flaky & Moist",
+              "minutes": 8,
+              "description": "Delicate texture, no colour — clean flavour"
+            },
+            {
+              "label": "Firm",
+              "minutes": 12,
+              "description": "Fully cooked through, flakes easily"
+            }
+          ]
         }
       ]
     },
@@ -405,6 +460,46 @@
               "tempF": 175
             }
           ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 16,
+              "description": "Grill marks, moist inside",
+              "tempF": 165
+            },
+            {
+              "label": "Well Done",
+              "minutes": 20,
+              "description": "Fully cooked, charred exterior",
+              "tempF": 175
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 20,
+              "description": "Moist and tender throughout",
+              "tempF": 165
+            },
+            {
+              "label": "Well Done",
+              "minutes": 25,
+              "description": "Fully cooked, very tender",
+              "tempF": 175
+            }
+          ]
         }
       ]
     },
@@ -500,6 +595,42 @@
               "description": "Fully softened with crispy edges"
             }
           ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 4,
+              "description": "Grill marks, bright green, slight snap"
+            },
+            {
+              "label": "Tender",
+              "minutes": 7,
+              "description": "Fully softened, lightly charred"
+            }
+          ]
+        },
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 3,
+              "description": "Bright green, firm bite — drain and ice bath"
+            },
+            {
+              "label": "Tender",
+              "minutes": 5,
+              "description": "Fully soft, good for soups"
+            }
+          ]
         }
       ]
     },
@@ -574,6 +705,42 @@
               "label": "Extra Crispy",
               "minutes": 7,
               "description": "Fully crisp throughout"
+            }
+          ]
+        },
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "ROLLING BOIL",
+          "doneness": [
+            {
+              "label": "Just Cooked",
+              "minutes": 3,
+              "description": "Pink and curled, very juicy — drain immediately"
+            },
+            {
+              "label": "Firm",
+              "minutes": 5,
+              "description": "Fully cooked through, use in salads or pasta"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Just Cooked",
+              "minutes": 4,
+              "description": "Pink and juicy, delicate texture"
+            },
+            {
+              "label": "Firm",
+              "minutes": 6,
+              "description": "Fully cooked, slightly firmer"
             }
           ]
         }
@@ -864,6 +1031,24 @@
               "description": "Maximum crunch throughout"
             }
           ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Charred & Crispy",
+              "minutes": 10,
+              "description": "Grill marks, firm crispy crust"
+            },
+            {
+              "label": "Deeply Charred",
+              "minutes": 15,
+              "description": "Smoky, chewy exterior — use skewers or grill basket"
+            }
+          ]
         }
       ]
     },
@@ -938,6 +1123,25 @@
               "label": "Charred",
               "minutes": 30,
               "description": "Deeply roasted, intense sweetness"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Tender",
+              "minutes": 12,
+              "description": "Juicy kernels with lightly crisped tips"
+            },
+            {
+              "label": "Charred",
+              "minutes": 16,
+              "description": "Caramelized, smoky-sweet kernels"
             }
           ]
         }
@@ -1023,6 +1227,27 @@
               "tempF": 160
             }
           ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 12,
+              "description": "Crispy exterior, juicy center",
+              "tempF": 145
+            },
+            {
+              "label": "Well Done",
+              "minutes": 16,
+              "description": "Fully cooked, golden crust",
+              "tempF": 160
+            }
+          ]
         }
       ]
     },
@@ -1079,6 +1304,43 @@
               "label": "Crispy",
               "minutes": 22,
               "description": "Deeply roasted, crispy edges"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 375,
+          "doneness": [
+            {
+              "label": "Golden",
+              "minutes": 8,
+              "description": "Crispy edges, meaty texture"
+            },
+            {
+              "label": "Crispy",
+              "minutes": 12,
+              "description": "Deeply crisped, intense savoury flavour"
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Charred",
+              "minutes": 6,
+              "description": "Grill marks, smoky and juicy"
+            },
+            {
+              "label": "Deeply Charred",
+              "minutes": 10,
+              "description": "Intensely smoky, meaty flavour"
             }
           ]
         }
@@ -1193,6 +1455,25 @@
               "description": "Fully tender, no waterlogging"
             }
           ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Tender-Crisp",
+              "minutes": 8,
+              "description": "Golden edges, slight bite"
+            },
+            {
+              "label": "Caramelized",
+              "minutes": 12,
+              "description": "Deep golden, sweet and crispy edges"
+            }
+          ]
         }
       ]
     },
@@ -1287,6 +1568,43 @@
               "description": "Fully soft, ready for mashing or soup"
             }
           ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 390,
+          "doneness": [
+            {
+              "label": "Crispy",
+              "minutes": 12,
+              "description": "Golden florets, crispy edges, tender inside"
+            },
+            {
+              "label": "Deeply Caramelized",
+              "minutes": 18,
+              "description": "Nutty, very crispy — almost like chips"
+            }
+          ]
+        },
+        {
+          "id": "grill",
+          "label": "Grill",
+          "emoji": "🔥",
+          "heatLevel": "MEDIUM-HIGH HEAT",
+          "doneness": [
+            {
+              "label": "Charred",
+              "minutes": 10,
+              "description": "Grill marks, smoky and tender — use steaks or florets on skewers"
+            },
+            {
+              "label": "Deeply Charred",
+              "minutes": 15,
+              "description": "Heavily charred, nutty and intense"
+            }
+          ]
         }
       ]
     },
@@ -1379,6 +1697,25 @@
               "label": "Soft",
               "minutes": 10,
               "description": "Fully soft, ideal for mashing or soups"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 380,
+          "doneness": [
+            {
+              "label": "Tender",
+              "minutes": 15,
+              "description": "Fork-tender with caramelized edges"
+            },
+            {
+              "label": "Caramelized",
+              "minutes": 20,
+              "description": "Deep golden, sweet and sticky"
             }
           ]
         }
@@ -1692,6 +2029,27 @@
               "tempF": 165
             }
           ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 375,
+          "doneness": [
+            {
+              "label": "Juicy",
+              "minutes": 12,
+              "description": "Golden casing, juicy inside — turn halfway",
+              "tempF": 160
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 16,
+              "description": "Deeply golden skin, very tender",
+              "tempF": 165
+            }
+          ]
         }
       ]
     },
@@ -1762,6 +2120,33 @@
               "label": "Well Done",
               "minutes": 10,
               "description": "Fully cooked, deep grill marks",
+              "tempF": 160
+            }
+          ]
+        },
+        {
+          "id": "oven",
+          "label": "Oven",
+          "emoji": "🫙",
+          "heatLevel": "OVEN",
+          "heatTempF": 425,
+          "doneness": [
+            {
+              "label": "Medium Rare",
+              "minutes": 8,
+              "description": "Finish in oven after pan sear — pink juicy center",
+              "tempF": 130
+            },
+            {
+              "label": "Medium",
+              "minutes": 12,
+              "description": "Finish in oven — lightly pink, fully flavourful",
+              "tempF": 140
+            },
+            {
+              "label": "Well Done",
+              "minutes": 18,
+              "description": "Fully cooked throughout, golden crust",
               "tempF": 160
             }
           ]
@@ -2059,6 +2444,20 @@
               "description": "Lightly charred, tender and smoky"
             }
           ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Crispy",
+              "minutes": 8,
+              "description": "Light crispy coating, tender inside — great with breadcrumbs"
+            }
+          ]
         }
       ]
     },
@@ -2141,6 +2540,27 @@
               "tempF": 145
             }
           ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Flaky & Moist",
+              "minutes": 10,
+              "description": "Light golden crust, moist flake",
+              "tempF": 130
+            },
+            {
+              "label": "Fully Cooked",
+              "minutes": 14,
+              "description": "Crispy exterior, fully cooked throughout",
+              "tempF": 145
+            }
+          ]
         }
       ]
     },
@@ -2198,6 +2618,60 @@
               "label": "Caramelised",
               "minutes": 22,
               "description": "Crispy skin, deeply sweet interior"
+            }
+          ]
+        },
+        {
+          "id": "boiling",
+          "label": "Boiling",
+          "emoji": "💧",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Tender",
+              "minutes": 15,
+              "description": "Fork-tender throughout — great for mashing"
+            },
+            {
+              "label": "Soft",
+              "minutes": 20,
+              "description": "Very soft, easy to mash or puree"
+            }
+          ]
+        },
+        {
+          "id": "pan",
+          "label": "Pan",
+          "emoji": "🍳",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Golden",
+              "minutes": 10,
+              "description": "Caramelized edges, tender center"
+            },
+            {
+              "label": "Deeply Caramelised",
+              "minutes": 15,
+              "description": "Rich golden colour, sweet and sticky"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Tender",
+              "minutes": 15,
+              "description": "Soft throughout, naturally sweet — great for baby food or mashing"
+            },
+            {
+              "label": "Very Soft",
+              "minutes": 20,
+              "description": "Meltingly soft, easy to puree"
             }
           ]
         }
@@ -2276,6 +2750,43 @@
               "description": "Deep colour, concentrated sweet-smoky flavour"
             }
           ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Golden",
+              "minutes": 12,
+              "description": "Crispy exterior, soft and creamy inside"
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 18,
+              "description": "Deeply golden, rich sweet-smoky flavour"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Tender",
+              "minutes": 10,
+              "description": "Soft and silky, mild flavour — good for dips"
+            },
+            {
+              "label": "Very Soft",
+              "minutes": 15,
+              "description": "Meltingly soft, easy to puree or mash"
+            }
+          ]
         }
       ]
     },
@@ -2352,6 +2863,25 @@
               "description": "Concentrated flavour, very soft"
             }
           ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 400,
+          "doneness": [
+            {
+              "label": "Tender-Crisp",
+              "minutes": 10,
+              "description": "Slightly blistered, still has bite"
+            },
+            {
+              "label": "Caramelised",
+              "minutes": 15,
+              "description": "Soft and sweet, golden edges"
+            }
+          ]
         }
       ]
     },
@@ -2389,6 +2919,24 @@
               "label": "Fully Cooked",
               "minutes": 4,
               "description": "Deeply wilted, concentrated flavour"
+            }
+          ]
+        },
+        {
+          "id": "steam",
+          "label": "Steam",
+          "emoji": "♨️",
+          "heatLevel": "MEDIUM HEAT",
+          "doneness": [
+            {
+              "label": "Wilted",
+              "minutes": 2,
+              "description": "Gently wilted, bright green, nutrients preserved"
+            },
+            {
+              "label": "Fully Cooked",
+              "minutes": 4,
+              "description": "Soft throughout, no bitterness"
             }
           ]
         }
@@ -2464,6 +3012,25 @@
               "label": "Caramelised",
               "minutes": 10,
               "description": "Deep colour, sweet and nutty"
+            }
+          ]
+        },
+        {
+          "id": "airfryer",
+          "label": "Air Fryer",
+          "emoji": "💨",
+          "heatLevel": "AIR FRYER",
+          "heatTempF": 375,
+          "doneness": [
+            {
+              "label": "Crisp-Tender",
+              "minutes": 8,
+              "description": "Blistered and crispy with a slight snap"
+            },
+            {
+              "label": "Crispy",
+              "minutes": 12,
+              "description": "Very crispy, almost chip-like — great as a snack"
             }
           ]
         }
@@ -2606,6 +3173,18 @@
                 "description": "Completamente cocido"
               }
             ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Horneado blando",
+                "description": "Clara cuajada, yema líquida — horneado con mantequilla"
+              },
+              {
+                "label": "Totalmente cuajado",
+                "description": "Clara y yema completamente cocinadas"
+              }
+            ]
           }
         }
       },
@@ -2730,6 +3309,30 @@
                 "description": "Completamente cocinado, piel crujiente"
               }
             ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Jugoso y hojaldrado",
+                "description": "Marcas de parrilla, centro jugoso — usar cesta para pescado"
+              },
+              {
+                "label": "Firme",
+                "description": "Completamente cocinado, piel tostada"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Jugoso y hojaldrado",
+                "description": "Textura delicada, sin color — sabor limpio"
+              },
+              {
+                "label": "Firme",
+                "description": "Completamente cocinado, se deshace fácilmente"
+              }
+            ]
           }
         }
       },
@@ -2814,6 +3417,30 @@
                 "description": "Completamente cocinada, extra crujiente"
               }
             ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Jugosa",
+                "description": "Marcas de parrilla, interior jugoso"
+              },
+              {
+                "label": "Bien hecha",
+                "description": "Completamente cocinada, exterior tostado"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Jugosa",
+                "description": "Húmeda y tierna por completo"
+              },
+              {
+                "label": "Bien hecha",
+                "description": "Completamente cocinada, muy tierna"
+              }
+            ]
           }
         }
       },
@@ -2878,6 +3505,30 @@
                 "description": "Completamente blando con bordes crujientes"
               }
             ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Marcas de parrilla, verde brillante, ligero crujido"
+              },
+              {
+                "label": "Tierno",
+                "description": "Completamente blando, ligeramente tostado"
+              }
+            ]
+          },
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Verde brillante, mordida firme — escurrir y baño de hielo"
+              },
+              {
+                "label": "Tierno",
+                "description": "Completamente blando, bueno para sopas"
+              }
+            ]
           }
         }
       },
@@ -2928,6 +3579,30 @@
               {
                 "label": "Extra crujientes",
                 "description": "Completamente crujientes"
+              }
+            ]
+          },
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Recién cocinadas",
+                "description": "Rosadas y curvadas, muy jugosas — escurrir inmediatamente"
+              },
+              {
+                "label": "Firmes",
+                "description": "Completamente cocinadas, ideales para ensaladas o pasta"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Recién cocinadas",
+                "description": "Rosadas y jugosas, textura delicada"
+              },
+              {
+                "label": "Firmes",
+                "description": "Completamente cocinadas, ligeramente más firmes"
               }
             ]
           }
@@ -3126,6 +3801,18 @@
                 "description": "Crujiente máximo por completo"
               }
             ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Tostado y crujiente",
+                "description": "Marcas de parrilla, costra crujiente y firme"
+              },
+              {
+                "label": "Muy tostado",
+                "description": "Ahumado, exterior masticable — usar brochetas o cesta"
+              }
+            ]
           }
         }
       },
@@ -3176,6 +3863,18 @@
               {
                 "label": "Tostado",
                 "description": "Muy asado, dulzor intenso"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Tierno",
+                "description": "Granos jugosos con puntas ligeramente crujientes"
+              },
+              {
+                "label": "Tostado",
+                "description": "Granos caramelizados y dulces"
               }
             ]
           }
@@ -3230,6 +3929,18 @@
                 "description": "Completamente cocinada, exterior caramelizado"
               }
             ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Jugosa",
+                "description": "Exterior crujiente, centro jugoso"
+              },
+              {
+                "label": "Bien hecha",
+                "description": "Completamente cocinada, costra dorada"
+              }
+            ]
           }
         }
       },
@@ -3268,6 +3979,30 @@
               {
                 "label": "Crujientes",
                 "description": "Muy asadas, bordes crujientes"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Doradas",
+                "description": "Bordes crujientes, textura carnosa"
+              },
+              {
+                "label": "Crujientes",
+                "description": "Muy crujientes, sabor umami intenso"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Tostadas",
+                "description": "Marcas de parrilla, ahumadas y jugosas"
+              },
+              {
+                "label": "Muy tostadas",
+                "description": "Ahumado intenso, sabor carnoso"
               }
             ]
           }
@@ -3346,6 +4081,18 @@
                 "description": "Completamente tierno, sin encharcarse"
               }
             ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Bordes dorados, ligeramente firme"
+              },
+              {
+                "label": "Caramelizado",
+                "description": "Muy dorado, bordes dulces y crujientes"
+              }
+            ]
           }
         }
       },
@@ -3410,6 +4157,30 @@
                 "description": "Completamente blanda, lista para aplastar o sopa"
               }
             ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Crujiente",
+                "description": "Floretes dorados, bordes crujientes, interior tierno"
+              },
+              {
+                "label": "Muy caramelizada",
+                "description": "Muy crujiente y tostada — casi como chips"
+              }
+            ]
+          },
+          "grill": {
+            "doneness": [
+              {
+                "label": "Tostada",
+                "description": "Marcas de parrilla, ahumada y tierna — usar filetes o brochetas"
+              },
+              {
+                "label": "Muy tostada",
+                "description": "Muy tostada, intensa y sabrosa"
+              }
+            ]
           }
         }
       },
@@ -3472,6 +4243,18 @@
               {
                 "label": "Blandas",
                 "description": "Completamente blandas, ideales para purés o sopas"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Tiernas",
+                "description": "Blandas al tenedor con bordes caramelizados"
+              },
+              {
+                "label": "Caramelizadas",
+                "description": "Muy doradas, dulces y pegajosas"
               }
             ]
           }
@@ -3682,6 +4465,18 @@
                 "description": "Piel muy dorada, interior muy tierno"
               }
             ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Jugosas",
+                "description": "Piel dorada, jugosas por dentro — girar a mitad"
+              },
+              {
+                "label": "Caramelizadas",
+                "description": "Piel muy dorada, interior muy tierno"
+              }
+            ]
           }
         }
       },
@@ -3728,6 +4523,22 @@
               {
                 "label": "Bien hecho",
                 "description": "Completamente cocinado, marcas de parrilla intensas"
+              }
+            ]
+          },
+          "oven": {
+            "doneness": [
+              {
+                "label": "Al punto menos",
+                "description": "Acabar en el horno tras sellar — centro rosado y jugoso"
+              },
+              {
+                "label": "Al punto",
+                "description": "Acabar en el horno — ligeramente rosado, muy sabroso"
+              },
+              {
+                "label": "Bien hecho",
+                "description": "Completamente cocinado, costra dorada"
               }
             ]
           }
@@ -3930,6 +4741,14 @@
                 "description": "Ligeramente tostado, tierno y ahumado"
               }
             ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Crujiente",
+                "description": "Recubrimiento ligero crujiente, tierno por dentro — ideal con pan rallado"
+              }
+            ]
           }
         }
       },
@@ -3982,6 +4801,18 @@
                 "description": "Completamente cocinado, escama muy suave"
               }
             ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Jugoso y hojaldrado",
+                "description": "Costra dorada ligera, escama húmeda"
+              },
+              {
+                "label": "Completamente cocinado",
+                "description": "Exterior crujiente, completamente cocinado"
+              }
+            ]
           }
         }
       },
@@ -4020,6 +4851,42 @@
               {
                 "label": "Caramelizado",
                 "description": "Piel crujiente, interior profundamente dulce"
+              }
+            ]
+          },
+          "boiling": {
+            "doneness": [
+              {
+                "label": "Tierno",
+                "description": "Blando al tenedor — ideal para aplastar"
+              },
+              {
+                "label": "Muy blando",
+                "description": "Muy blando, fácil de aplastar o hacer puré"
+              }
+            ]
+          },
+          "pan": {
+            "doneness": [
+              {
+                "label": "Dorado",
+                "description": "Bordes caramelizados, centro tierno"
+              },
+              {
+                "label": "Muy caramelizado",
+                "description": "Color dorado intenso, dulce y pegajoso"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Tierno",
+                "description": "Blando por completo, naturalmente dulce — ideal para purés"
+              },
+              {
+                "label": "Muy blando",
+                "description": "Meloso, fácil de hacer puré"
               }
             ]
           }
@@ -4074,6 +4941,30 @@
                 "description": "Color intenso, sabor dulce-ahumado concentrado"
               }
             ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Dorada",
+                "description": "Exterior crujiente, interior suave y cremoso"
+              },
+              {
+                "label": "Caramelizada",
+                "description": "Muy dorada, sabor dulce-ahumado intenso"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Tierna",
+                "description": "Suave y sedosa, sabor suave — ideal para dips"
+              },
+              {
+                "label": "Muy blanda",
+                "description": "Melosa, fácil de hacer puré"
+              }
+            ]
           }
         }
       },
@@ -4126,6 +5017,18 @@
                 "description": "Sabor concentrado, muy blando"
               }
             ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Crujiente-tierno",
+                "description": "Ligeramente ampollado, todavía con mordida"
+              },
+              {
+                "label": "Caramelizado",
+                "description": "Blando y dulce, bordes dorados"
+              }
+            ]
           }
         }
       },
@@ -4152,6 +5055,18 @@
               {
                 "label": "Completamente cocinadas",
                 "description": "Muy marchitas, sabor concentrado"
+              }
+            ]
+          },
+          "steam": {
+            "doneness": [
+              {
+                "label": "Marchitas",
+                "description": "Suavemente marchitas, verde brillante, nutrientes preservados"
+              },
+              {
+                "label": "Completamente cocinadas",
+                "description": "Blandas por completo, sin amargor"
               }
             ]
           }
@@ -4204,6 +5119,18 @@
               {
                 "label": "Caramelizadas",
                 "description": "Color intenso, dulces y tostadas"
+              }
+            ]
+          },
+          "airfryer": {
+            "doneness": [
+              {
+                "label": "Crujiente-tiernas",
+                "description": "Ampolladas y crujientes con ligero crujido"
+              },
+              {
+                "label": "Muy crujientes",
+                "description": "Muy crujientes, casi como chips — ideal como snack"
               }
             ]
           }
